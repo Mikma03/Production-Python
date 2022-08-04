@@ -13,6 +13,7 @@
   - [Others communities](#others-communities)
 - [Modern Python Development Environments](#modern-python-development-environments)
 - [New Things in Python](#new-things-in-python)
+- [Python in Comparison with Other Languages](#python-in-comparison-with-other-languages)
 
 <!-- /TOC -->
 
@@ -135,3 +136,60 @@ https://learning.oreilly.com/library/view/expert-python-programming/978180107110
 
 # New Things in Python
 
+In terms of the two latest versions of Python, we can distinguish four main syntax updates:
+
+- Dictionary and merge update operators (added in Python 3.9)
+- Assignment expressions (added in Python 3.8)
+- Type hinting generics (added in Python 3.9)
+- Positional-only arguments (added in Python 3.8)
+
+**Dictionaries**
+
+    existing_dictionary |= other_dictionary
+
+Example1:
+
+    >>> mydict = {'a': 1}
+    >>> mydict |= {'a': 3, 'b': 2}
+    >>> mydict
+    {'a': 3, 'b': 2}
+
+Example2:
+
+    >>> from collections import ChainMap
+    >>> user_account = {"iban": "GB71BARC20031885581746", "type": "account"}
+    >>> user_profile = {"display_name": "John Doe", "type": "profile"}
+    >>> user = ChainMap(user_account, user_profile)
+    >>> user["iban"]
+    'GB71BARC20031885581746'
+    >>> user["display_name"]
+    'John Doe'
+    >>> user["type"]
+    'account'
+
+**Functions**
+
+Python is quite flexible when it comes to passing arguments to functions. There are two ways in which function arguments can be provided to functions:
+
+- As a positional argument
+
+- As a keyword argument
+
+
+    def concatenate(first: str, second: str, /, *, delim: str):
+    return delim.join([first, second])
+
+- All arguments preceding the / mark are positional-only arguments
+
+- All arguments following the * mark are keyword-only arguments
+
+**graphlib module**
+
+Another interesting addition to the Python standard library is the `graphlib` module, added in Python 3.9. This is a module that provides utilities for working with graph-like data structures.
+
+
+# Python in Comparison with Other Languages
+
+start:
+
+https://learning.oreilly.com/library/view/expert-python-programming/9781801071109/Text/Chapter_4.xhtml#:-:text=4,with%20Other%20Languages

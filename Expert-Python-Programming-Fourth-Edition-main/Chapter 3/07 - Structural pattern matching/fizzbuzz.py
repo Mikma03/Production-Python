@@ -4,3 +4,4 @@ for i in range(100):
         case (0, _): print("Fizz")
         case (_, 0): print("Buzz")
         case _: print(i)
+        

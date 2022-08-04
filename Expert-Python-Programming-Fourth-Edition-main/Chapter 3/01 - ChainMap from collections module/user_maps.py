@@ -1,3 +1,19 @@
+"""
+# Similar example
+
+>>> from collections import ChainMap
+>>> user_account = {"iban": "GB71BARC20031885581746", "type": "account"}
+>>> user_profile = {"display_name": "John Doe", "type": "profile"}
+>>> user = ChainMap(user_account, user_profile)
+>>> user["iban"]
+'GB71BARC20031885581746'
+>>> user["display_name"]
+'John Doe'
+>>> user["type"]
+'account'
+
+"""
+
 from collections import ChainMap
 
 
@@ -31,3 +47,4 @@ if __name__ == "__main__":
     print(f"name:    {user['display_name']}")
     print(f"iban:    {user['iban']}")
     print(f"balance: {user['balance']}")
+    print(f'{user}')
