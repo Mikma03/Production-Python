@@ -1,33 +1,63 @@
-
 <!-- TOC -->
 
 - [Introduction - useful links](#introduction---useful-links)
-  - [Python ... sheets](#python--sheets)
-    - [SpeedSheet](#speedsheet)
-    - [Cheatsheet](#cheatsheet)
+  - [SpeedSheet](#speedsheet)
+  - [Cheatsheet](#cheatsheet)
   - [Index of Python Enhancement Proposals (PEPs)](#index-of-python-enhancement-proposals-peps)
+  - [Python 3 Module of the Week](#python-3-module-of-the-week)
 - [The best books on the Python market](#the-best-books-on-the-python-market)
-- [Places for practise. General purpose & interview](#places-for-practise-general-purpose--interview)
-- [Active communities - Python](#active-communities---python)
-  - [Mailing lists](#mailing-lists)
-  - [Others communities](#others-communities)
-- [Modern Python Development Environments](#modern-python-development-environments)
-- [New Things in Python](#new-things-in-python)
-- [Python in Comparison with Other Languages](#python-in-comparison-with-other-languages)
+  - [Beginner](#beginner)
+    - [Introducing Python, 2nd Edition](#introducing-python-2nd-edition)
+    - [Python Distilled](#python-distilled)
+    - [Python Workout](#python-workout)
+  - [Intermediate](#intermediate)
+    - [Effective Python: 90 Specific Ways to Write Better Python, 2nd Edition](#effective-python-90-specific-ways-to-write-better-python-2nd-edition)
+    - [Python in a Nutshell, 4th Edition](#python-in-a-nutshell-4th-edition)
+    - [Robust Python](#robust-python)
+  - [Advanced](#advanced)
+    - [High Performance Python, 2nd Edition](#high-performance-python-2nd-edition)
+    - [Expert Python Programming - Fourth Edition](#expert-python-programming---fourth-edition)
+    - [Fluent Python, 2nd Edition](#fluent-python-2nd-edition)
+    - [Python Concurrency with asyncio](#python-concurrency-with-asyncio)
+    - [Mastering Python - Second Edition](#mastering-python---second-edition)
+    - [Using Asyncio in Python](#using-asyncio-in-python)
+  - [Python per topic](#python-per-topic)
+    - [DevOps in Python: Infrastructure as Python](#devops-in-python-infrastructure-as-python)
+- [Python API's](#python-apis)
+  - [APIs for Beginners](#apis-for-beginners)
+  - [Python API Development](#python-api-development)
+  - [Postman Beginner's Course - API Testing](#postman-beginners-course---api-testing)
+  - [Build a Django REST API with the Django Rest Framework](#build-a-django-rest-api-with-the-django-rest-framework)
+- [Python Data Structure](#python-data-structure)
+  - [Data Structure](#data-structure)
+- [Python practise exercise](#python-practise-exercise)
+  - [w3resource](#w3resource)
+  - [PyNative](#pynative)
+  - [Advanced Python Tutorials](#advanced-python-tutorials)
+  - [Python Exercises](#python-exercises)
+  - [Codewars](#codewars)
+  - [HackerRank](#hackerrank)
+  - [Letcode](#letcode)
+- [Interviews resources](#interviews-resources)
+  - [Python Interview Questions](#python-interview-questions)
+  - [Top 100+ Python Interview Questions You Must Prepare In 2022](#top-100-python-interview-questions-you-must-prepare-in-2022)
+  - [Top 100 Python Interview Questions in 2022](#top-100-python-interview-questions-in-2022)
+  - [42 Real-time Python Interview Questions and Answers 2022](#42-real-time-python-interview-questions-and-answers-2022)
+  - [50 Top Python Interview Questions and Answers](#50-top-python-interview-questions-and-answers)
+  - [Python Programming Interview Questions](#python-programming-interview-questions)
 
 <!-- /TOC -->
 
 # Introduction - useful links
 ___
-## Python ... sheets
 
-### SpeedSheet
+## SpeedSheet
 
 Interactive Python cheat sheet. Covers the core Python programming language
 
 > https://speedsheet.io/s/python#gcez
 
-### Cheatsheet
+## Cheatsheet
 
 Based on the book Automate the Boring Stuff with Python and many other sources.
 
@@ -40,156 +70,127 @@ This PEP contains the index of all Python Enhancement Proposals.
 
 > https://peps.python.org/
 
+## Python 3 Module of the Week 
+
+PyMOTW-3 is a series of articles written by Doug Hellmann to demonstrate how to use the modules of the Python 3 standard library.
+
+> https://pymotw.com/3/
+
 # The best books on the Python market
 ___
 
-# Places for practise. General purpose & interview
-___
+## Beginner
 
-# Active communities - Python
-___
+### Introducing Python, 2nd Edition
+> https://learning.oreilly.com/library/view/introducing-python-2nd/9781492051374/
 
-## Mailing lists
+### Python Distilled
+> https://learning.oreilly.com/library/view/python-distilled/9780134173399/
 
-Besides lists with very specific themes, there are few general mailing lists that should be very interesting for every Python programmer. These are:
 
-- **python-ideas@python.org:** 
+### Python Workout
+> https://learning.oreilly.com/library/view/python-workout/9781617295508/
 
-This is a staple when it comes to Python mailing lists. It is a place for discussing a wide variety of ideas regarding Python. Most PEPs start as a speculative idea discussion on this mailing list. It is a great place for discussing potential "what ifs" and finding out what features people would like to see in the near future.
+## Intermediate
 
-- **python-dev@python.org:** 
+### Effective Python: 90 Specific Ways to Write Better Python, 2nd Edition
+> https://learning.oreilly.com/library/view/effective-python-90/9780134854717/
 
-This is a mailing list specifically for the purpose of core Python development (mainly CPython interpreter). It is also a place where first drafts of new PEPs are discussed before being officially announced through other channels. It isn't a place where you should be asking for general Python help, but it is an essential resource if you would like to try your hand at fixing known bugs in the CPython interpreter or the Python standard library.
+### Python in a Nutshell, 4th Edition
+> https://learning.oreilly.com/library/view/python-in-a/9781098113544/
 
-- **python-announce-list@python.org:** 
+### Robust Python
+> https://learning.oreilly.com/library/view/robust-python/9781098100650/
 
-This is a mailing list for various announcements. You can find announcements of conferences and meetups here, as well as notifications about new releases of your favorite packages and frameworks or new PEPs. It is also great for discovering new and exciting projects.
+## Advanced
 
-## Others communities
+### High Performance Python, 2nd Edition
+> https://learning.oreilly.com/library/view/high-performance-python/9781492055013/
 
-- PySlackers Slack workspace (**https://pyslackers.com**): A large community of Python enthusiasts using the Slack messaging platform to discuss anything Python-related
+### Expert Python Programming - Fourth Edition
+> https://learning.oreilly.com/library/view/expert-python-programming/9781801071109/
 
-- Python Discord server (**https://pythondiscord.com**): Another open Python community but using Discord as their messaging platform
+### Fluent Python, 2nd Edition
+> https://learning.oreilly.com/library/view/fluent-python-2nd/9781492056348/
 
-- /r/python subreddit (**https://www.reddit.com/r/Python/**): A single subreddit on the Reddit platform dedicated to Python
+### Python Concurrency with asyncio
+> https://learning.oreilly.com/library/view/python-concurrency-with/9781617298660/
 
-- Python Weekly **(http://www.pythonweekly.com/)** is a popular newsletter that delivers to its subscribers dozens of new, interesting Python packages and resources every week
+### Mastering Python - Second Edition
+> https://learning.oreilly.com/library/view/mastering-python/9781800207721/
 
-- PyCoder's Weekly **(https://pycoders.com)** is another popular weekly newsletter with a digest of new packages and interesting articles
+### Using Asyncio in Python
+> https://learning.oreilly.com/library/view/using-asyncio-in/9781492075325/
 
-# Modern Python Development Environments
-___
+## Python per topic
 
-The pip installation can be bootstrapped using the ensurepip module as in the following example:
+### DevOps in Python: Infrastructure as Python
+> https://learning.oreilly.com/library/view/devops-in-python/9781484279960/
 
-    python -m ensure pip
+# Python API's
 
-When you have pip available, installing a new package is as simple as this:
+## APIs for Beginners
+> https://www.youtube.com/watch?v=GZvSYJDk-us&t=3143s&ab_channel=freeCodeCamp.org
 
-    pip install <package-name>
+## Python API Development
+> https://www.youtube.com/watch?v=0sOvCWFmrtA&t=80s&ab_channel=freeCodeCamp.org
 
-Among other features, pip allows specific versions of packages to be installed (using `pip install <package-name>==<version>`) or upgraded to the latest version available (using `pip install -–upgrade <package-name>`).
+## Postman Beginner's Course - API Testing
+> https://www.youtube.com/watch?v=VywxIQ2ZXw4&ab_channel=freeCodeCamp.org
 
-When you use` pip` to install a new package from PyPI, it will be installed into one of the available site-packages directories. The exact location of site-packages directories is specific to the operating system. You can inspect paths where Python will be searching for modules and packages by using the `site` module as a command as follows:
+## Build a Django REST API with the Django Rest Framework
+> https://www.youtube.com/watch?v=c708Nf0cHrs
 
-    python -m site
 
+# Python Data Structure
 
-An alternative way to obtain the site-packages is by invoking `sys.getsitepackages()`. The following is an example of using that function in an interactive shell:
+## Data Structure
 
-    >>> import site
-    >>> site.getsitepackages()
-    ['C:\\Users\\mikol\\AppData\\Local\\Programs\\Python\\Python310', 'C:\\Users\\mikol\\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages']
-    >>>
+> https://jovian.ai/learn/data-structures-and-algorithms-in-python
 
-The important thing to note about `venv` is that it does not provide any additional abilities to track what packages should be installed in it. Virtual environments are also not portable and should not be moved to another system/machine or even a different filesystem path. This means that a new virtual environment needs to be created every time you want to install your application on a new host.
+> https://www.youtube.com/watch?v=pkYVOmU3MgA&t=19010s&ab_channel=freeCodeCamp.org
 
-Because of this, there is a best practice that's used by `pip` users to store the definition of all project dependencies in a single place. The easiest way to do this is by creating a `requirements.txt` file (this is the naming convention).
 
-With such a file, all dependencies can be easily installed in a single step. The `pip install` command understands the format of such requirements files. You can specify the path to a requirements file using the `-r` flag as in the following example:
+# Python practise exercise
 
-    pip install -r requirements.txt
+## w3resource
+> https://www.w3resource.com/python-exercises/python-functions-exercises.php
 
-There is the `pip freeze` command, which prints all packages in the current environment together with their versions, but it should be used carefully. This list will also include dependencies of your dependencies, so for large projects, it will quickly become very large. You will have to carefully inspect whether the list contains anything installed accidentally or by mistake.
+## PyNative
+> https://pynative.com/python-exercises-with-solutions/
 
-**There are two leading tools for providing system-level isolation of development environments:**
+## Advanced Python Tutorials
+> https://realpython.com/tutorials/advanced/page/1/
 
-- Docker for operating system-level virtualization
-- Vagrant for machine virtualization
+## Python Exercises
+> https://www.pythonprogramming.net/
 
-Install:
+## Codewars
+> https://www.codewars.com/dashboard
 
-      You can find Docker installation instructions on https://www.docker.com/get-started
+## HackerRank
+> https://www.hackerrank.com/domains/python
 
+## Letcode
+> https://leetcode.com/problemset/all/
 
-Docker supports plenty of instructions, but the most basic ones that you need to know in order to get started are as follows:
 
-https://learning.oreilly.com/library/view/expert-python-programming/9781801071109/Text/Chapter_2.xhtml#:-:text=Docker%20supports%20plenty%20of,started%20are%20as%20follows%3A
+# Interviews resources
 
+## Python Interview Questions
+> https://www.interviewbit.com/python-interview-questions/#freshers
 
-      The official Docker documentation can be found at https://docs.docker.com/
+## Top 100+ Python Interview Questions You Must Prepare In 2022
+> https://www.edureka.co/blog/interview-questions/python-interview-questions/
 
-The following table gives a short list of such useful utilities that I find invaluable when working with any code. Think of it as a mini awesome list of programming productivity tools:
+## Top 100 Python Interview Questions in 2022
+> https://intellipaat.com/blog/interview-question/python-interview-questions/
 
-https://learning.oreilly.com/library/view/expert-python-programming/9781801071109/Text/Chapter_2.xhtml#:-:text=The%20following%20table,programming%20productivity%20tools%3A
+## 42 Real-time Python Interview Questions and Answers 2022
+> https://geekflare.com/top-python-interview-questions/
 
+## 50 Top Python Interview Questions and Answers
+> https://hackr.io/blog/python-interview-questions
 
-# New Things in Python
-
-In terms of the two latest versions of Python, we can distinguish four main syntax updates:
-
-- Dictionary and merge update operators (added in Python 3.9)
-- Assignment expressions (added in Python 3.8)
-- Type hinting generics (added in Python 3.9)
-- Positional-only arguments (added in Python 3.8)
-
-**Dictionaries**
-
-    existing_dictionary |= other_dictionary
-
-Example1:
-
-    >>> mydict = {'a': 1}
-    >>> mydict |= {'a': 3, 'b': 2}
-    >>> mydict
-    {'a': 3, 'b': 2}
-
-Example2:
-
-    >>> from collections import ChainMap
-    >>> user_account = {"iban": "GB71BARC20031885581746", "type": "account"}
-    >>> user_profile = {"display_name": "John Doe", "type": "profile"}
-    >>> user = ChainMap(user_account, user_profile)
-    >>> user["iban"]
-    'GB71BARC20031885581746'
-    >>> user["display_name"]
-    'John Doe'
-    >>> user["type"]
-    'account'
-
-**Functions**
-
-Python is quite flexible when it comes to passing arguments to functions. There are two ways in which function arguments can be provided to functions:
-
-- As a positional argument
-
-- As a keyword argument
-
-
-    def concatenate(first: str, second: str, /, *, delim: str):
-    return delim.join([first, second])
-
-- All arguments preceding the / mark are positional-only arguments
-
-- All arguments following the * mark are keyword-only arguments
-
-**graphlib module**
-
-Another interesting addition to the Python standard library is the `graphlib` module, added in Python 3.9. This is a module that provides utilities for working with graph-like data structures.
-
-
-# Python in Comparison with Other Languages
-
-start:
-
-https://learning.oreilly.com/library/view/expert-python-programming/9781801071109/Text/Chapter_4.xhtml#:-:text=4,with%20Other%20Languages
+## Python Programming Interview Questions
+> https://data-flair.training/blogs/python-programming-interview-questions/
