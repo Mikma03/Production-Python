@@ -1,10 +1,12 @@
 <!-- TOC -->
 
 - [Introduction - useful links](#introduction---useful-links)
-  - [SpeedSheet](#speedsheet)
+  - [SpeedSheet - Python](#speedsheet---python)
+  - [One Sheet To Rule Them All](#one-sheet-to-rule-them-all)
   - [Cheatsheet](#cheatsheet)
   - [Index of Python Enhancement Proposals (PEPs)](#index-of-python-enhancement-proposals-peps)
   - [Python 3 Module of the Week](#python-3-module-of-the-week)
+  - [Live Python code](#live-python-code)
 - [The best books on the Python market](#the-best-books-on-the-python-market)
   - [Beginner](#beginner)
     - [Introducing Python, 2nd Edition](#introducing-python-2nd-edition)
@@ -51,11 +53,16 @@
 # Introduction - useful links
 ___
 
-## SpeedSheet
+## SpeedSheet - Python
 
 Interactive Python cheat sheet. Covers the core Python programming language
 
 > https://speedsheet.io/s/python#gcez
+
+
+## One Sheet To Rule Them All
+
+> https://speedsheet.io/s/docs#0HRe
 
 ## Cheatsheet
 
@@ -75,6 +82,10 @@ This PEP contains the index of all Python Enhancement Proposals.
 PyMOTW-3 is a series of articles written by Doug Hellmann to demonstrate how to use the modules of the Python 3 standard library.
 
 > https://pymotw.com/3/
+
+## Live Python code
+
+> https://pythontutor.com/
 
 # The best books on the Python market
 ___
