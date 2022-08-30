@@ -7,6 +7,8 @@
   - [Index of Python Enhancement Proposals (PEPs)](#index-of-python-enhancement-proposals-peps)
   - [Python 3 Module of the Week](#python-3-module-of-the-week)
   - [Live Python code](#live-python-code)
+- [Websites dedicated for Python](#websites-dedicated-for-python)
+  - [Real Python](#real-python)
 - [The best books on the Python market](#the-best-books-on-the-python-market)
   - [Beginner](#beginner)
     - [Introducing Python, 2nd Edition](#introducing-python-2nd-edition)
@@ -86,6 +88,13 @@ PyMOTW-3 is a series of articles written by Doug Hellmann to demonstrate how to 
 ## Live Python code
 
 > https://pythontutor.com/
+
+# Websites dedicated for Python
+
+## Real Python
+
+> https://realpython.com/
+
 
 # The best books on the Python market
 ___
