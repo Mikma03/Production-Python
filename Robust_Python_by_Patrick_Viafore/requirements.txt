@@ -1,0 +1,16 @@
+behave
+hypothesis
+junit2html
+mypy
+monkeytype
+mutmut
+pydantic
+pyhamcrest
+pyre-check
+pytest
+pytype
+pyyaml
+rx
+stevedore
+
+code_examples/plugin

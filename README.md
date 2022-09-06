@@ -25,9 +25,10 @@
     - [Python Concurrency with asyncio](#python-concurrency-with-asyncio)
     - [Mastering Python - Second Edition](#mastering-python---second-edition)
     - [Using Asyncio in Python](#using-asyncio-in-python)
-  - [Python per topic](#python-per-topic)
+  - [Python for DevOps](#python-for-devops)
     - [DevOps in Python: Infrastructure as Python](#devops-in-python-infrastructure-as-python)
 - [Python API's](#python-apis)
+  - [REST API i Python. Kurs video.](#rest-api-i-python-kurs-video)
   - [APIs for Beginners](#apis-for-beginners)
   - [Python API Development](#python-api-development)
   - [Postman Beginner's Course - API Testing](#postman-beginners-course---api-testing)
@@ -142,12 +143,16 @@ ___
 ### Using Asyncio in Python
 > https://learning.oreilly.com/library/view/using-asyncio-in/9781492075325/
 
-## Python per topic
+## Python for DevOps
 
 ### DevOps in Python: Infrastructure as Python
-> https://learning.oreilly.com/library/view/devops-in-python/9781484279960/
+> https://learning.oreilly.com/library/view/python-for-devops/9781492057680/
 
 # Python API's
+
+## REST API i Python. Kurs video.
+
+> https://helion.pl/ksiazki/rest-api-i-python-kurs-video-pracuj-z-api-przy-uzyciu-fastapi-mongodb-i-pytest-dawid-wybierek,vresta.htm#format/w
 
 ## APIs for Beginners
 > https://www.youtube.com/watch?v=GZvSYJDk-us&t=3143s&ab_channel=freeCodeCamp.org
