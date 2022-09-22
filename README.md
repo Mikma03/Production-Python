@@ -7,6 +7,7 @@
   - [Index of Python Enhancement Proposals (PEPs)](#index-of-python-enhancement-proposals-peps)
   - [Python 3 Module of the Week](#python-3-module-of-the-week)
   - [Live Python code](#live-python-code)
+  - [Structuring Your Project](#structuring-your-project)
 - [Websites dedicated for Python](#websites-dedicated-for-python)
   - [Real Python](#real-python)
 - [The best books on the Python market](#the-best-books-on-the-python-market)
@@ -50,6 +51,11 @@
   - [42 Real-time Python Interview Questions and Answers 2022](#42-real-time-python-interview-questions-and-answers-2022)
   - [50 Top Python Interview Questions and Answers](#50-top-python-interview-questions-and-answers)
   - [Python Programming Interview Questions](#python-programming-interview-questions)
+- [Python environment for projects](#python-environment-for-projects)
+  - [Testing Python Code](#testing-python-code)
+    - [pytest - docs: official website](#pytest---docs-official-website)
+  - [Documenting Python Code](#documenting-python-code)
+    - [RealPython - guide](#realpython---guide)
 
 <!-- /TOC -->
 
@@ -73,7 +79,6 @@ Based on the book Automate the Boring Stuff with Python and many other sources.
 
 > https://www.pythoncheatsheet.org/
 
-
 ## Index of Python Enhancement Proposals (PEPs)
 
 This PEP contains the index of all Python Enhancement Proposals.
@@ -90,12 +95,15 @@ PyMOTW-3 is a series of articles written by Doug Hellmann to demonstrate how to 
 
 > https://pythontutor.com/
 
+## Structuring Your Project
+
+> https://docs.python-guide.org/writing/structure/
+
 # Websites dedicated for Python
 
 ## Real Python
 
 > https://realpython.com/
-
 
 # The best books on the Python market
 ___
@@ -107,7 +115,6 @@ ___
 
 ### Python Distilled
 > https://learning.oreilly.com/library/view/python-distilled/9780134173399/
-
 
 ### Python Workout
 > https://learning.oreilly.com/library/view/python-workout/9781617295508/
@@ -219,3 +226,25 @@ ___
 
 ## Python Programming Interview Questions
 > https://data-flair.training/blogs/python-programming-interview-questions/
+
+
+___
+___
+___
+
+# Python environment for projects
+
+This part of the file is maily for gather useful links and materials for Python project: started for web to data sciecne. FOr example: testing, creating docs, building dependencies and so on.
+
+## Testing Python Code
+
+### pytest - docs: official website
+
+https://docs.pytest.org/en/7.1.x/
+
+
+## Documenting Python Code
+
+### RealPython - guide
+
+https://realpython.com/documenting-python-code/
