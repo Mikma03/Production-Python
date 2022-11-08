@@ -1,5 +1,6 @@
 <!-- TOC -->
 
+- [First line of defence - Official Python docs](#first-line-of-defence---official-python-docs)
 - [Introduction - useful links](#introduction---useful-links)
   - [SpeedSheet - Python](#speedsheet---python)
   - [One Sheet To Rule Them All](#one-sheet-to-rule-them-all)
@@ -10,6 +11,7 @@
   - [Structuring Your Project](#structuring-your-project)
 - [Websites dedicated for Python](#websites-dedicated-for-python)
   - [Real Python](#real-python)
+- [Udemy high value courses](#udemy-high-value-courses)
 - [The best books on the Python market](#the-best-books-on-the-python-market)
   - [Beginner](#beginner)
     - [Introducing Python, 2nd Edition](#introducing-python-2nd-edition)
@@ -34,6 +36,11 @@
   - [Python API Development](#python-api-development)
   - [Postman Beginner's Course - API Testing](#postman-beginners-course---api-testing)
   - [Build a Django REST API with the Django Rest Framework](#build-a-django-rest-api-with-the-django-rest-framework)
+  - [Building Python Microservices with FastAPI](#building-python-microservices-with-fastapi)
+  - [Build REST APIs with Django REST Framework and Python](#build-rest-apis-with-django-rest-framework-and-python)
+  - [REST APIs with Flask and Python](#rest-apis-with-flask-and-python)
+  - [GraphQL in Action](#graphql-in-action)
+  - [GraphQL. Kurs video. Buduj nowoczesne API w Pythonie](#graphql-kurs-video-buduj-nowoczesne-api-w-pythonie)
 - [Python Data Structure](#python-data-structure)
   - [Data Structure](#data-structure)
 - [Python practise exercise](#python-practise-exercise)
@@ -51,16 +58,17 @@
   - [42 Real-time Python Interview Questions and Answers 2022](#42-real-time-python-interview-questions-and-answers-2022)
   - [50 Top Python Interview Questions and Answers](#50-top-python-interview-questions-and-answers)
   - [Python Programming Interview Questions](#python-programming-interview-questions)
-- [Python environment for projects](#python-environment-for-projects)
-  - [Testing Python Code](#testing-python-code)
-    - [pytest - docs: official website](#pytest---docs-official-website)
-  - [Documenting Python Code](#documenting-python-code)
-    - [RealPython - guide](#realpython---guide)
 
 <!-- /TOC -->
 
-# Introduction - useful links
+# First line of defence - Official Python docs
+
+> https://docs.python.org/3/
+
 ___
+
+
+# Introduction - useful links
 
 ## SpeedSheet - Python
 
@@ -73,11 +81,13 @@ Interactive Python cheat sheet. Covers the core Python programming language
 
 > https://speedsheet.io/s/docs#0HRe
 
+
 ## Cheatsheet
 
 Based on the book Automate the Boring Stuff with Python and many other sources.
 
 > https://www.pythoncheatsheet.org/
+
 
 ## Index of Python Enhancement Proposals (PEPs)
 
@@ -85,19 +95,25 @@ This PEP contains the index of all Python Enhancement Proposals.
 
 > https://peps.python.org/
 
+
 ## Python 3 Module of the Week 
 
 PyMOTW-3 is a series of articles written by Doug Hellmann to demonstrate how to use the modules of the Python 3 standard library.
 
 > https://pymotw.com/3/
 
+
 ## Live Python code
 
 > https://pythontutor.com/
 
+
 ## Structuring Your Project
 
 > https://docs.python-guide.org/writing/structure/
+
+___
+
 
 # Websites dedicated for Python
 
@@ -105,8 +121,18 @@ PyMOTW-3 is a series of articles written by Doug Hellmann to demonstrate how to 
 
 > https://realpython.com/
 
-# The best books on the Python market
 ___
+
+
+# Udemy high value courses
+
+> https://www.udemy.com/user/fredbaptiste/
+
+___
+
+
+# The best books on the Python market
+
 
 ## Beginner
 
@@ -119,6 +145,7 @@ ___
 ### Python Workout
 > https://learning.oreilly.com/library/view/python-workout/9781617295508/
 
+
 ## Intermediate
 
 ### Effective Python: 90 Specific Ways to Write Better Python, 2nd Edition
@@ -129,6 +156,7 @@ ___
 
 ### Robust Python
 > https://learning.oreilly.com/library/view/robust-python/9781098100650/
+
 
 ## Advanced
 
@@ -150,15 +178,18 @@ ___
 ### Using Asyncio in Python
 > https://learning.oreilly.com/library/view/using-asyncio-in/9781492075325/
 
+
 ## Python for DevOps
 
 ### DevOps in Python: Infrastructure as Python
 > https://learning.oreilly.com/library/view/python-for-devops/9781492057680/
 
+___
+
+
 # Python API's
 
 ## REST API i Python. Kurs video.
-
 > https://helion.pl/ksiazki/rest-api-i-python-kurs-video-pracuj-z-api-przy-uzyciu-fastapi-mongodb-i-pytest-dawid-wybierek,vresta.htm#format/w
 
 ## APIs for Beginners
@@ -173,6 +204,23 @@ ___
 ## Build a Django REST API with the Django Rest Framework
 > https://www.youtube.com/watch?v=c708Nf0cHrs
 
+## Building Python Microservices with FastAPI
+> https://learning.oreilly.com/library/view/building-python-microservices/9781803245966/
+
+## Build REST APIs with Django REST Framework and Python
+> https://learning.oreilly.com/videos/build-rest-apis/9781801819022/
+
+## REST APIs with Flask and Python
+> https://learning.oreilly.com/videos/rest-apis-with/9781788621526/
+
+## GraphQL in Action
+> https://learning.oreilly.com/library/view/graphql-in-action/9781617295683/
+
+## GraphQL. Kurs video. Buduj nowoczesne API w Pythonie
+> https://helion.pl/ksiazki/graphql-kurs-video-buduj-nowoczesne-api-w-pythonie-lukasz-przybylski,vgraph.htm#format/w
+
+___
+
 
 # Python Data Structure
 
@@ -181,6 +229,8 @@ ___
 > https://jovian.ai/learn/data-structures-and-algorithms-in-python
 
 > https://www.youtube.com/watch?v=pkYVOmU3MgA&t=19010s&ab_channel=freeCodeCamp.org
+
+___
 
 
 # Python practise exercise
@@ -206,6 +256,8 @@ ___
 ## Letcode
 > https://leetcode.com/problemset/all/
 
+___
+
 
 # Interviews resources
 
@@ -227,24 +279,6 @@ ___
 ## Python Programming Interview Questions
 > https://data-flair.training/blogs/python-programming-interview-questions/
 
-
-___
-___
 ___
 
-# Python environment for projects
 
-This part of the file is maily for gather useful links and materials for Python project: started for web to data sciecne. FOr example: testing, creating docs, building dependencies and so on.
-
-## Testing Python Code
-
-### pytest - docs: official website
-
-https://docs.pytest.org/en/7.1.x/
-
-
-## Documenting Python Code
-
-### RealPython - guide
-
-https://realpython.com/documenting-python-code/
