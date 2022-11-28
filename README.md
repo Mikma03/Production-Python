@@ -3,7 +3,6 @@
 - [First line of defence - Official Python docs](#first-line-of-defence---official-python-docs)
 - [Introduction - useful links](#introduction---useful-links)
   - [SpeedSheet - Python](#speedsheet---python)
-  - [One Sheet To Rule Them All](#one-sheet-to-rule-them-all)
   - [Cheatsheet](#cheatsheet)
   - [Index of Python Enhancement Proposals (PEPs)](#index-of-python-enhancement-proposals-peps)
   - [Python 3 Module of the Week](#python-3-module-of-the-week)
@@ -12,11 +11,15 @@
 - [Websites dedicated for Python](#websites-dedicated-for-python)
   - [Real Python](#real-python)
 - [Udemy high value courses](#udemy-high-value-courses)
-- [The best books on the Python market](#the-best-books-on-the-python-market)
+  - [Fred Baptiste](#fred-baptiste)
+  - [Andy Bek](#andy-bek)
+  - [Estefania Cassingena Navone](#estefania-cassingena-navone)
+- [The best books regarding to Python](#the-best-books-regarding-to-python)
   - [Beginner](#beginner)
     - [Introducing Python, 2nd Edition](#introducing-python-2nd-edition)
     - [Python Distilled](#python-distilled)
     - [Python Workout](#python-workout)
+    - [Automate the Boring Stuff with Python](#automate-the-boring-stuff-with-python)
   - [Intermediate](#intermediate)
     - [Effective Python: 90 Specific Ways to Write Better Python, 2nd Edition](#effective-python-90-specific-ways-to-write-better-python-2nd-edition)
     - [Python in a Nutshell, 4th Edition](#python-in-a-nutshell-4th-edition)
@@ -71,45 +74,25 @@ ___
 # Introduction - useful links
 
 ## SpeedSheet - Python
-
 Interactive Python cheat sheet. Covers the core Python programming language
-
 > https://speedsheet.io/s/python#gcez
 
-
-## One Sheet To Rule Them All
-
-> https://speedsheet.io/s/docs#0HRe
-
-
 ## Cheatsheet
-
 Based on the book Automate the Boring Stuff with Python and many other sources.
-
 > https://www.pythoncheatsheet.org/
 
-
 ## Index of Python Enhancement Proposals (PEPs)
-
 This PEP contains the index of all Python Enhancement Proposals.
-
 > https://peps.python.org/
 
-
 ## Python 3 Module of the Week 
-
 PyMOTW-3 is a series of articles written by Doug Hellmann to demonstrate how to use the modules of the Python 3 standard library.
-
 > https://pymotw.com/3/
 
-
 ## Live Python code
-
 > https://pythontutor.com/
 
-
 ## Structuring Your Project
-
 > https://docs.python-guide.org/writing/structure/
 
 ___
@@ -118,7 +101,6 @@ ___
 # Websites dedicated for Python
 
 ## Real Python
-
 > https://realpython.com/
 
 ___
@@ -126,13 +108,20 @@ ___
 
 # Udemy high value courses
 
+## Fred Baptiste
 > https://www.udemy.com/user/fredbaptiste/
+
+## Andy Bek
+> https://www.udemy.com/course/object-oriented-programming-with-modern-python/
+
+## Estefania Cassingena Navone
+> https://www.udemy.com/course/python-loops-and-looping-techniques-beginner-to-advanced/
+
 
 ___
 
 
-# The best books on the Python market
-
+# The best books regarding to Python
 
 ## Beginner
 
@@ -144,6 +133,9 @@ ___
 
 ### Python Workout
 > https://learning.oreilly.com/library/view/python-workout/9781617295508/
+
+### Automate the Boring Stuff with Python
+> https://learning.oreilly.com/library/view/automate-the-boring/9781098122584/
 
 
 ## Intermediate
@@ -278,7 +270,3 @@ ___
 
 ## Python Programming Interview Questions
 > https://data-flair.training/blogs/python-programming-interview-questions/
-
-___
-
-

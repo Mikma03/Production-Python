@@ -13,6 +13,7 @@ print(hex(id(my_var)))
 
 other_var = my_var
 
+# -------------------------------------- #
 
 # Reference Counting
 
@@ -44,6 +45,7 @@ a_id = id(a)
 a = None
 ref_count(a_id)
 
+# -------------------------------------- #
 
 # Garbage Collection
 
@@ -59,10 +61,7 @@ def object_by_id(object_id):
             return "Object exists"
     return "Not found"
 
-
-# Dynamic vs Static Typing
-
-
+# -------------------------------------- #
 
 # Variable Re-Assignment
 
@@ -75,6 +74,7 @@ b = 10
 hex(id(a))
 hex(id(b))
 
+# -------------------------------------- #
 
 # Object Mutability
 
@@ -86,6 +86,7 @@ t = (a, b)
 a.append(3)
 b.append(5)
 
+# -------------------------------------- #
 
 # Function Arguments and Mutability
 
@@ -97,12 +98,7 @@ def process(s):
 my_var = 'hello'
 print('my_var # = {0}'.format(id(my_var)))
 
-
-# Shared References and Mutability
-
-
-# Variable Equality
-
+# -------------------------------------- #
 
 # Everything is an Object
 
@@ -117,8 +113,3 @@ d = 500
 
 print(id(c))
 print(id(d))
-
-
-# Python Optimizations
-
- 
