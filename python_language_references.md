@@ -41,153 +41,179 @@
 - [Python data structure](#python-data-structure)
   - [Named tuple](#named-tuple)
   - [Enum](#enum)
+- [Unpacking](#unpacking)
+  - [Extended Unpacking](#extended-unpacking)
 
 <!-- /TOC -->
 
 # Garbage Collection - Fred Baptiste course
+
 > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7192344#overview
 
-
-___
+---
 
 # Context Manager
+
 > https://www.infoshareacademy.online/products/python-wtajemniczenie/categories/2148421071
 
-
-___
+---
 
 # Functions in Python
 
 ## Function Parameters - Fred Baptiste course
+
 > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7736812#overview
 
-
-
-___
+---
 
 # Type Hint
 
 ## Robust Python - Annotating Your Code with Types
+
 > https://learning.oreilly.com/library/view/robust-python/9781098100650/part01.html
 
 ## Infoshare course - PL
+
 > https://www.infoshareacademy.online/products/python-wtajemniczenie/categories/4302467
 
 ## Python in a Nutshell - Type Annotations
+
 > https://learning.oreilly.com/library/view/python-in-a/9781098113544/ch05.html#other_type_checkers
 
-
-___
+---
 
 # Errors handling
 
 ## Infoshare course - PL
+
 > https://www.infoshareacademy.online/products/python-poczatek/categories/4280844
 
 ## Effective Python: 90 Specific Ways to Write Better Python
+
 > https://learning.oreilly.com/library/view/effective-python-90/9780134854717/ch08.xhtml#item65
 
 ## Python in a Nutshell - Exceptions
+
 > https://learning.oreilly.com/library/view/python-in-a/9781098113544/ch06.html
 
-
-___
+---
 
 # Python The File System
 
 ## Standard library
+
 > https://pymotw.com/3/file_access.html
 
 ## READING AND WRITING FILES
+
 > https://learning.oreilly.com/library/view/automate-the-boring/9781098122584/xhtml/ch09.xhtml
 
 ## ORGANIZING FILES
+
 > https://learning.oreilly.com/library/view/automate-the-boring/9781098122584/xhtml/ch10.xhtml
 
 ## WORKING WITH CSV FILES AND JSON DATA
+
 > https://learning.oreilly.com/library/view/automate-the-boring/9781098122584/xhtml/ch16.xhtml#ch16lev1sec1
 
 ## Input and Output
+
 > https://learning.oreilly.com/library/view/python-distilled/9780134173399/ch09.xhtml#ch09lev1sec1
 
 ## Files and Directories
+
 > https://learning.oreilly.com/library/view/introducing-python-2nd/9781492051374/ch14.html#text_write
 
 ## Python in a Nutshell - File and Text Operations
+
 > https://learning.oreilly.com/library/view/python-in-a/9781098113544/ch11.html#:-:text=File%20and%20Text%20Operations
 
-
-___
+---
 
 # Algorithms
 
 ## Base Change Algorithm - int
-> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7622694#overview
-> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7622698#overview
 
+> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7622694#overview > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7622698#overview
 
-___
+---
 
 # Design patterns
 
 ## InfoShare - introduction
 
 ### Factory method
+
 > https://www.infoshareacademy.online/products/python-wtajemniczenie/categories/2148938725/posts/2152632867
 
-___
+---
 
 # Python Optimization
 
 ## Fred Baptiste course
 
 ### Interning, String Interning, Peephole
-> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7192348#overview
-> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368670#overview
-> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368672#overview
+
+> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7192348#overview > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368670#overview > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368672#overview
 
 ### Decimals: Performance Considerations
+
 > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7649326#overview
 
 ## High Performance Python - Profiling to Find Bottlenecks
+
 > https://learning.oreilly.com/library/view/high-performance-python/9781492055013/ch02.html
 
 ## Expert Python Programming - Code Optimization
+
 > https://learning.oreilly.com/library/view/expert-python-programming/9781801071109/Text/Chapter_13.xhtml#_idParaDest-258
 
-
-___
+---
 
 # Python extra features
 
 ## Ellipsis in Python
+
 > https://realpython.com/python-ellipsis/
 
-
-___
+---
 
 # Python features to keep in mind when coding
 
 ## Floats: Equality Testing - Fred Baptiste course
+
 > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7622720#overview
 
 ### PEP 485 regarding to folats equality
+
 > https://peps.python.org/pep-0485/
 
 ### PEP 327 regarding to decimal
+
 > https://peps.python.org/pep-0327/
 
 ## Booleans: Precedence and Short-Circuiting - Fred Baptiste course
-> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7687160#overview
-> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7691968#overview
 
-___
+> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7687160#overview > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7691968#overview
+
+---
 
 # Python data structure
 
 ## Named tuple
+
 > https://www.infoshareacademy.online/products/python-poczatek/categories/4280613/posts/14370370
 
 ## Enum
+
 > vhttps://www.infoshareacademy.online/products/python-poczatek/categories/4280613/posts/14370375
 
+---
+
+# Unpacking
+
+## Extended Unpacking
+
+> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7785298#overview
+
+> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7785302#overview

@@ -72,3 +72,42 @@ s = "YXS"
 s[0]
 s[-1]
 
+# set
+s = {1, 2, 3}
+
+# that will be error
+s[0]
+
+d1 = {'a': 1, 'b': 2, 'c': 3}
+
+for e in d1:
+    print(e)
+
+a,b,c = d
+print(d)
+
+for e in d1.values:
+    print(e)
+
+
+
+# -------------------------------------- #
+
+# Extended Unpacking
+
+l = [1, 2, 3, 4, 5,6]
+b = l[1:0]
+
+a, b = l[0], l[1]
+a, *b = l
+
+
+a = 'abcdef'
+a, *b = s
+a,b,c,d = a[0], a[1], s[2:-1], s[-1]
+
+t = ('a', 'b', 'c')
+a, *b = t
+
+
+
