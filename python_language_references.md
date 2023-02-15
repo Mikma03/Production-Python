@@ -154,7 +154,9 @@
 
 ### Interning, String Interning, Peephole
 
-> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7192348#overview > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368670#overview > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368672#overview
+> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7192348#overview
+> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368670#overview
+> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368672#overview
 
 ### Decimals: Performance Considerations
 

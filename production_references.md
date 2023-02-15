@@ -11,6 +11,8 @@
 - [Debugging](#debugging)
 - [Packaging](#packaging)
 - [Observing Application Behavior and Performance](#observing-application-behavior-and-performance)
+- [Logging in Python](#logging-in-python)
+- [Makefile - Python](#makefile---python)
 
 <!-- /TOC -->
 
@@ -78,7 +80,11 @@ Nevertheless this part is important because could be used as reference repo and 
   - https://learning.oreilly.com/library/view/expert-python-programming/9781801071109/Text/Chapter_10.xhtml#:-:text=Testing
 
 - Python in a Nutshell, 4th Edition - Chapter 17. Testing, Debugging, and Optimizing
+
   - https://learning.oreilly.com/library/view/python-in-a/9781098113544/ch17.html#:-:text=Chapter%2017.%20Testing%2C%20Debugging%2C%20and%20Optimizing
+
+- Python Testing with pytest
+  - https://learning.oreilly.com/library/view/python-testing-with/9781680509427/
 
 # Documentation Python Code
 
@@ -87,7 +93,11 @@ Nevertheless this part is important because could be used as reference repo and 
   - https://realpython.com/documenting-python-code/
 
 - Mastering Python - Second Edition - Documentation – How to Use Sphinx and reStructuredText
+
   - https://learning.oreilly.com/library/view/mastering-python/9781800207721/Text/Chapter_9.xhtml#:-:text=How%20to%20Use%20Sphinx%20and%20reStructuredText
+
+- Authoring and maintaining documentation
+  - https://learning.oreilly.com/library/view/publishing-python-packages/9781617299919/OEBPS/Text/08.htm#heading_id_3
 
 # Debugging
 
@@ -121,9 +131,27 @@ Nevertheless this part is important because could be used as reference repo and 
   - https://docs.python-guide.org/shipping/packaging/
 
 - Infoshare - Python: Packages and modules
+
   - https://www.infoshareacademy.online/products/python-poczatek/categories/4273154/posts/14345879
+
+- Publishing Python Packages
+  - https://learning.oreilly.com/library/view/publishing-python-packages/9781617299919/
 
 # Observing Application Behavior and Performance
 
 - Expert Python Programming - Observing Application Behavior and Performance
   - https://learning.oreilly.com/library/view/expert-python-programming/9781801071109/Text/Chapter_12.xhtml#_idParaDest-244
+
+# Logging in Python
+
+- ArjanCode: Python Logging: How to Write Logs
+  - https://www.youtube.com/watch?v=pxuXaaT1u3k&ab_channel=ArjanCodes
+
+# Makefile - Python
+
+- Creating a Python Makefile
+
+  - https://earthly.dev/blog/python-makefile/#top
+
+- YouTube explanation
+  - https://www.youtube.com/watch?v=Yt-UF7fNLJE&ab_channel=NeuralNine
