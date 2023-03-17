@@ -31,6 +31,9 @@
     - [Decimals: Performance Considerations](#decimals-performance-considerations)
   - [High Performance Python - Profiling to Find Bottlenecks](#high-performance-python---profiling-to-find-bottlenecks)
   - [Expert Python Programming - Code Optimization](#expert-python-programming---code-optimization)
+  - [py-spy: Sampling profiler for Python programs](#py-spy-sampling-profiler-for-python-programs)
+  - [PyO3 - Rust and Python](#pyo3---rust-and-python)
+  - [faster Python code](#faster-python-code)
 - [Python extra features](#python-extra-features)
   - [Ellipsis in Python](#ellipsis-in-python)
 - [Python features to keep in mind when coding](#python-features-to-keep-in-mind-when-coding)
@@ -154,9 +157,7 @@
 
 ### Interning, String Interning, Peephole
 
-> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7192348#overview
-> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368670#overview
-> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368672#overview
+> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7192348#overview > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368670#overview > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368672#overview
 
 ### Decimals: Performance Considerations
 
@@ -169,6 +170,18 @@
 ## Expert Python Programming - Code Optimization
 
 > https://learning.oreilly.com/library/view/expert-python-programming/9781801071109/Text/Chapter_13.xhtml#_idParaDest-258
+
+## py-spy: Sampling profiler for Python programs
+
+> https://github.com/benfred/py-spy
+
+## PyO3 - Rust and Python
+
+> https://pyo3.rs/v0.18.1/
+
+## faster Python code
+
+> https://pythonspeed.com/
 
 ---
 

@@ -111,3 +111,13 @@ a, *b = t
 
 
 
+l = [lambda: print(x) for x in range(10)]
+x=15
+l[0]()
+
+
+x = "bdgbfebsetbsrtbargbtsrthwhteshsertabnaerthaethaehtaehbdgbfebsetbsrtbargbtsrthwhteshsertabnaerthaethaehtaeh"
+y = "bdgbfebsetbsrtbargbtsrthwhteshsertabnaerthaethaehtaehbdgbfebsetbsrtbargbtsrthwhteshsertabnaerthaethaehtaeh"
+
+print(id(x))
+print(id(y))
