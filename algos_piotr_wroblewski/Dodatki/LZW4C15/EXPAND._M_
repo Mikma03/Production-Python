@@ -1,0 +1,16 @@
+#
+# Microsoft makefile for EXPAND.C ( COMPACT model )
+#
+.c.obj:
+     cl /AC /c $*.c
+
+expand.obj: expand.c
+
+sayerror.obj: sayerror.c
+
+rw_io.obj: rw_io.c
+
+expand.exe: expand.obj sayerror.obj rw_io.obj lzw4c_c.lib
+     link/map expand sayerror rw_io,expand,,lzw4c_c.lib;
+
+

@@ -1,0 +1,168 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>CryptPak ReadMe</title>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" link="#000000"
+vlink="#000000" alink="#000000">
+
+<h1><font size="5">Introduction</font></h1>
+
+<p>CryptPak is an open source library which I started writing
+originally for my shareware products in 1997. It was soon
+released toe be used with other applications for no charge and
+has seen many improvements since then. Today it supports the
+following algorithms and modules:</p>
+
+<ul>
+    <li>Blowfish (block cipher)</li>
+    <li>CAST (block cipher)</li>
+    <li>CipherServer (to handle multiple ciphers in a common
+        fashion)</li>
+    <li>Cobra128 (block cipher)</li>
+    <li>CRC32 (checksum algorithm)</li>
+    <li>IDEA (block cipher)</li>
+    <li>LZSS (compression algorithm)</li>
+    <li>MARS (block cipher)</li>
+    <li>MD5 (secure hash algorithm)</li>
+    <li>PC1 (stream cipher)</li>
+    <li>RandomPool (secure random number generator)</li>
+    <li>RC6 (block cipher)</li>
+    <li>Rijndael (block cipher), also known as &quot;AES&quot;</li>
+    <li>Serpent (block cipher)</li>
+    <li>TMS (zero encryption cipher for test purposes)</li>
+    <li>triple-DES (block cipher)</li>
+    <li>Twofish (block cipher)</li>
+    <li>Yarrow (secure random number generator)</li>
+</ul>
+
+<p>The software in written in C and runs under Win32 and Linux.
+Samples are available for the Borland C/C++ Compiler 5.5. (BCC55),
+Delphi 6 and GCC. There is no final license model for this
+software yet, an lGPL might be chosen one soon. There is also no
+responsibility on the author's side for any damage the code might
+cause due to problems or improper usage. Some of the algorithms
+offered in this library may require special licensing, e.g. IDEA
+or MARS.</p>
+
+<p>&nbsp;</p>
+
+<h1><font size="5">Overview</font></h1>
+
+<p>This package is separated in the actual core sources, samples
+and build files. To keep the actual archive file small only the
+essential binary compliations are added, everything else can
+easily be build in each individual development environment. Three
+main folders are available:</p>
+
+<ul>
+    <li><em>bin</em> contains the DLL fir Win32, so they don't
+        have to be rebuild in environments which don't support C
+        compilation (e.g. Delphi)</li>
+    <li><em>samples</em> includes a variety of different
+        examples, where <em>cpp</em> has core C++ sample code for
+        BCC55 , <em>delphi</em> a graphical test interface plus
+        import libraries, <em>linux</em> a simple shell script to
+        compile a test program</li>
+    <li><em>src</em> contains the actual core sources of
+        CryptPak; it is important to understand that each of the
+        modules can either be use standalone or together in a
+        library, it doesn't matter in which combo or on which
+        system; the makefile allows you rebuild with BCC55</li>
+</ul>
+
+<p>By reading the sample code and checking out the settings in
+each build environment it should be fairly easy to understand of
+how things work. Please note that this is a low level library and
+especially to build a safe encryption system you will need some
+basic background knowledge to produce resonable results.</p>
+
+<p>&nbsp;</p>
+
+<h1><font size="5">Feature and Changes</font></h1>
+
+<p>(this is a summary of what I have documented during the past
+time)</p>
+
+<h2><font size="3">Version 3.01</font></h2>
+
+<p>There is a minor change: the calling convention is now stdcall
+for the callback function type Cipher_RandomGenerator.</p>
+
+<h2><font size="3">Version 4.00</font></h2>
+
+<p>Since this version 4.0 a Yarrow implementation is available
+and now also used as the internal random number generator for the
+cipher server. Also new: some modules allow now a static
+initialization (instead of using the memory manager), nice e.g.
+for system wide instances using shared memory (currently only
+usable in C implementations, static binding is recommended).</p>
+
+<h2><font size="3">Version 4.02</font></h2>
+
+<p>Since today the new AES winner and standard algorithm Rjindael
+is included. It's a 256bit key size, 16 bytes block size
+implementation.</p>
+
+<h2><font size="3">Version 4.03</font></h2>
+
+<p>A new compiler switch NON_COMMERCIAL (used in CIPHERSERVER.C).
+It brings CryptPak closer to a total free of charge product by
+testing it under another compiler. Two new algorithms, RC6 and
+Serpent, are available, thanks to Christian Thoeing. He also
+optimized the Rijndael implementation a lot.</p>
+
+<h2><font size="3">Version 4.05</font></h2>
+
+<p>The library compiles now under Linux and Windows CE, sample
+applications were written for both systems. The former standalone
+project MD5 Checksum became due to its small size part of this
+project. The ReadMe document is back to HTML. Creating the final
+ZIP file will be done under Linux from now on.</p>
+
+<h2><font size="3">Version 4.05a</font></h2>
+
+<p>Removed MD5 Checksum, which is now a CryptPak independent
+application using a different C compiler.</p>
+
+<h2><font size="3">Version 4.06</font></h2>
+
+<p>There was key setup bug in triple-DES, limiting the key space
+(Warning: old data won't decrypted correctly with this fix). Some
+platforms (WINCE, VC, VB, VFP) are not supported anymore
+directly, due to missing or outdated compilers. The function
+Support_GetCrunchKeyBuildBufSize() was finally spellchecked.
+Selftests for MD5 and SHA-1 didn't work. And there was a memory
+leak in Yarrow_Reseed(). Introduced support for the Borland C/C++
+Compiler 5.5.</p>
+
+<p>&nbsp;</p>
+
+<h1><font size="5">Contact the Author</font></h1>
+
+<p>E-Mail: <a href="mailto:markus_hahn@gmx.net">markus_hahn@gmx.net</a></p>
+
+<p>For questions and suggestions. And no, I there is no easy way
+to use CyptPak in VB. And no, I don't have code sample code for a
+compatible data transfer with Java. And no, there is also no
+sample code for a 1-2-3 easy encryption of data since CryptPak is
+a low level library and you have to get used to it. Please :)</p>
+
+<p>Web: <a href="http://come.to/hahn">http://come.to/hahn</a></p>
+
+<p>For updates check out the official website. <br>
+Please verify also the MD5 checksum for the integrity of the ZIP
+archive.</p>
+
+<p>&nbsp;</p>
+
+<h1><font size="5">Credits</font></h1>
+
+<p>Thanks to <a href="mailto:c.thoeing@web.de">Christian Thoeing</a>,
+the co-author.</p>
+</body>
+</html>

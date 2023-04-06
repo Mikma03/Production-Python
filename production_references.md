@@ -10,6 +10,7 @@
 - [Documentation Python Code](#documentation-python-code)
 - [Debugging](#debugging)
 - [Packaging](#packaging)
+  - [How to Dynamically Generate Requirements.txt file for Python Apps](#how-to-dynamically-generate-requirementstxt-file-for-python-apps)
 - [Observing Application Behavior and Performance](#observing-application-behavior-and-performance)
 - [Logging in Python](#logging-in-python)
 - [Makefile - Python](#makefile---python)
@@ -136,6 +137,10 @@ Nevertheless this part is important because could be used as reference repo and 
 
 - Publishing Python Packages
   - https://learning.oreilly.com/library/view/publishing-python-packages/9781617299919/
+
+## How to Dynamically Generate Requirements.txt file for Python Apps
+
+- https://www.youtube.com/watch?v=0ZeoruSobc4&list=PLnFWJCugpwfztr1ND_n0b_j-QXV20DHNj&index=4
 
 # Observing Application Behavior and Performance
 

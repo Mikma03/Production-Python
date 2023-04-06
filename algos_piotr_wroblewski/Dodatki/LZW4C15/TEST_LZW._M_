@@ -1,0 +1,17 @@
+#
+# Microsoft makefile for TEST_LZW.C (COMPACT model )
+#
+.c.obj:
+     cl /AC /c $*.c
+
+test_lzw.obj: test_lzw.c
+
+sayerror.obj: sayerror.c
+
+dir_io.obj: dir_io.c
+
+rw_io.obj: rw_io.c
+
+test_lzw.exe: test_lzw.obj sayerror.obj rw_io.obj dir_io.obj lzw4c_c.lib
+     link/map test_lzw sayerror rw_io dir_io,test_lzw,,lzw4c_c.lib;
+

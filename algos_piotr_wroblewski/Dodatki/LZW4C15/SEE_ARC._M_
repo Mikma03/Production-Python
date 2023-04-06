@@ -1,0 +1,17 @@
+#
+# Microsoft makefile for SEE_ARC.C (COMPACT model )
+#
+.c.obj:
+     cl /AC /c $*.c
+
+see_arc.obj: see_arc.c
+
+sayerror.obj: sayerror.c
+
+dir_io.obj: dir_io.c
+
+rw_io.obj: rw_io.c
+
+see_arc.exe: see_arc.obj sayerror.obj rw_io.obj dir_io.obj lzw4c_c.lib
+     link/map see_arc sayerror rw_io dir_io,see_arc,,lzw4c_c.lib;
+

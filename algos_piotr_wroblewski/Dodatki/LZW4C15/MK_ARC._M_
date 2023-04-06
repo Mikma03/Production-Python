@@ -1,0 +1,17 @@
+#
+# Microsoft makefile for MK_ARC.C (COMPACT model )
+#
+.c.obj:
+     cl /AC /c $*.c
+
+mk_arc.obj: mk_arc.c
+
+sayerror.obj: sayerror.c
+
+dir_io.obj: dir_io.c
+
+rw_io.obj: rw_io.c
+
+mk_arc.exe: mk_arc.obj sayerror.obj rw_io.obj dir_io.obj lzw4c_c.lib
+     link/map mk_arc sayerror rw_io dir_io,mk_arc,,lzw4c_c.lib;
+

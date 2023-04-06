@@ -1,0 +1,17 @@
+#
+# Turbo C makefile for MK_ARC.C ( COMPACT model )
+#
+.c.obj:
+     tcc -mc -c -P $*.c
+
+mk_arc.exe: mk_arc.obj sayerror.obj rw_io.obj dir_io.obj lzw4c_c.lib
+     tcc -mc -M mk_arc.obj sayerror.obj rw_io.obj dir_io.obj lzw4c_c.lib
+
+testlzw2.obj: testlzw2.c
+
+sayerror.obj: sayerror.c
+
+rw_io.obj: rw_io.c
+
+dir_io.obj: dir_io.c
+

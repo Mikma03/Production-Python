@@ -1,0 +1,17 @@
+#
+# Borland C makefile for MK_ARC.C ( COMPACT model )
+#
+.c.obj:
+     bcc -mc -c -P $*.c
+
+mk_arc.exe: mk_arc.obj sayerror.obj rw_io.obj dir_io.obj lzw4c_c.lib
+     bcc -mc -M mk_arc.obj sayerror.obj rw_io.obj dir_io.obj lzw4c_c.lib
+
+mk_arc.obj: mk_arc.c
+
+sayerror.obj: sayerror.c
+
+rw_io.obj: rw_io.c
+
+dir_io.obj: dir_io.c
+

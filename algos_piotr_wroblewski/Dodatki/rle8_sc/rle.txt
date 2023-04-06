@@ -1,0 +1,40 @@
+Aby skompilowaæ program huf.c w kompilatorze innym, ni¿ Borland:
+
+a) wstaw do pliku nastêpuj¹ce definicje
+
+#define MAXPATH   260
+#define MAXDIR    256
+#define MAXFILE   256
+#define MAXEXT    256
+#define MAXDRIVE    3
+
+b) skasuj liniê:
+
+#include <dir.h>
+
+c) zast¹p funkcjê kod:
+
+fnsplit(infile_name, drive, dir, filename, ext);    /* get filename               */
+    
+dowoln¹ funkcj¹ dekoduj¹c¹ z parametru infile_name:
+drive - nr dysku
+dir - œcie¿ka
+filename - nazwa pliku
+ext - rozszerzenie
+
+Opis firmy Borland:
+
+fnsplit takes a file's full path name (path) as 
+a string in the form   X:\DIR\SUBDIR\NAME.EXT and 
+splits path into its four components. It then 
+stores those components in the strings pointed to 
+by drive, dir, name,  and ext. All five components 
+must be passed but any of them can be a null which 
+means the corresponding component will be parsed but 
+not stored. If any path component is null, that 
+component corresponds to a non-NULL, empty string.
+
+The maximum sizes for these strings are given by 
+the constants MAXDRIVE, MAXDIR, MAXPATH, MAXFILE, 
+and MAXEXT (defined in dir.h) and each size includes 
+space for the null-terminator.

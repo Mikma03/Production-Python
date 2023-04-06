@@ -1,0 +1,17 @@
+#
+# Turbo C makefile for TEST_LZW.C ( COMPACT model )
+#
+.c.obj:
+     tcc -mc -c -P $*.c
+
+test_lzw.exe: test_lzw.obj sayerror.obj rw_io.obj dir_io.obj lzw4c_c.lib
+     tcc -mc -M test_lzw.obj sayerror.obj rw_io.obj dir_io.obj lzw4c_c.lib
+
+testlzw2.obj: testlzw2.c
+
+sayerror.obj: sayerror.c
+
+rw_io.obj: rw_io.c
+
+dir_io.obj: dir_io.c
+

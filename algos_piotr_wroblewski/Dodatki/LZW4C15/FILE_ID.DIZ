@@ -1,0 +1,12 @@
+NAME: LZW Data Compression Library for C
+KEYS: LZW DATA COMPRESSION LIBRARY COMPRESS
+FILE: LZW4C14.ZIP    VER: 1.4   DATE: June 94
+REG$: MarshallSoft Computing, Inc. --- $45.00
+DSCR: LZW4C is a data compression library for
+C programmers which uses the LZW algorithm as
+published in research papers by Lempel,  Ziv,
+and  Welch. The LZW algorithm is probably the
+best  generic  compression  algorithm   known
+today. Supports Borland Turbo C, Microsoft C,
+and MIX Power C.
+

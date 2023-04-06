@@ -1,0 +1,14 @@
+#
+# Turbo C makefile for EXPAND ( compact model )
+#
+.c.obj:
+     tcc -mc -c -P $<
+
+expand.exe: expand.obj sayerror.obj rw_io.obj lzw4c_c.lib
+     tcc -mc -M expand.obj sayerror.obj rw_io.obj lzw4c_c.lib
+
+expand.obj: expand.c
+
+sayerror.obj: sayerror.c
+
+rw_io.obj: rw_io.c

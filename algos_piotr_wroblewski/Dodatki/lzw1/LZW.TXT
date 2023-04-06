@@ -1,0 +1,16 @@
+The DOUGPACK unit implements my own interpretation of how the LZW algoritm
+should be implemented. I take all the credit/blame for the implementation
+and any bugs it may contain.
+
+The Documentation on how to use the unit is pretty good the source code
+has some documentation but is pretty convoluted.
+
+Included is a simple 1 file compression program as a demonstration
+on how to usethis unit.
+
+It should be noted that the LZW algorithm is patented, so use of this
+algorithm in a commercial program might not be a good idea.
+
+
+Douglas P. Webb
+dwebb@binkley.cs.mcgill.ca

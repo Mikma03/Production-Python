@@ -1,0 +1,16 @@
+#
+# Microsoft makefile for COMPRESS.C ( COMPACT model )
+#
+.c.obj:
+     cl /AC /c $*.c
+
+compress.obj: compress.c
+
+sayerror.obj: sayerror.c
+
+rw_io.obj: rw_io.c
+
+compress.exe: compress.obj sayerror.obj rw_io.obj lzw4c_c.lib
+     link/map compress sayerror rw_io,compress,,lzw4c_c.lib;
+
+

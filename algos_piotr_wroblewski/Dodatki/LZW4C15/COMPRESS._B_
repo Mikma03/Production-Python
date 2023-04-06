@@ -1,0 +1,16 @@
+#
+# Borland C makefile for COMPRESS.C ( compact model )
+#
+.c.obj:
+     bcc -mc -c -P $<
+
+compress.exe: compress.obj sayerror.obj rw_io.obj lzw4c_c.lib
+     bcc -mc -M compress.obj sayerror.obj rw_io.obj lzw4c_c.lib
+
+compress.obj: compress.c
+
+sayerror.obj: sayerror.c
+
+rw_io.obj: rw_io.c
+
+

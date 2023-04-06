@@ -1,0 +1,1080 @@
+
+
+                          LZW Data Compression Library
+
+                                For the C Language
+
+
+                                    (LZW4C)
+
+
+
+                                 USERS MANUAL
+
+
+
+
+
+                                  Version 1.4
+
+                                  June 1, 1994
+
+
+
+
+                        This software is provided as-is.
+                 There are no warranties, expressed or implied.
+
+
+
+
+                              Copyright (C) 1994
+                              All rights reserved
+
+
+
+                              MarshallSoft Computing, Inc.
+                              Post Office Box 4543
+                              Huntsville AL 35815
+
+                              205-881-4630 Voice / FAX
+                              205-880-9748 Support BBS
+
+
+                                       _______
+                                  ____|__     |                (R)
+                               --|       |    |-------------------
+                                 |   ____|__  |  Association of
+                                 |  |       |_|  Shareware
+                                 |__|   o   |    Professionals
+                               -----|   |   |---------------------
+                                    |___|___|    MEMBER
+
+
+
+
+
+
+
+
+        LZW4C Users Manual                                     Page 1
+                              C O N T E N T S
+
+
+
+
+
+         Chapter                                                   Page
+
+         1.0 Introduction..............................................3
+             1.1 Distribution Files....................................3
+             1.2 Compiling the Library.................................4
+             1.3 User Support..........................................4
+             1.4 ASP Ombudsman.........................................5
+             1.5 Installation..........................................5
+         2.0 The LZW Algorithm.........................................6
+             2.1 LZW Compression.......................................6
+             2.2 LZW Expansion.........................................7
+             2.3 LZW Implementation....................................7
+         3.0 Example Programs..........................................8
+             3.1 COMPRESS..............................................8
+             3.2 EXPAND................................................8
+             3.3 MK_ARC................................................8
+             3.4 UN_ARC................................................9
+             3.5 SEE_ARC...............................................9
+             3.6 EX_ARC................................................9
+             3.7 TEST_LZW..............................................9
+         4.0 Reader & Writer Functions................................10
+         5.0 Library Functions........................................11
+             5.1 InitLZW..............................................11
+             5.2 TermLZW..............................................11
+             5.3 Compress.............................................12
+             5.4 Expand...............................................12
+         6.0 Error Codes..............................................13
+             6.1 EXPANSION_ERROR......................................13
+             6.2 CANNOT_ALLOCATE......................................13
+             6.3 INTERNAL_ERROR.......................................13
+             6.4 NOT_READY............................................13
+             6.5 BAD_BITCODE..........................................13
+         7.0 Legal Issues.............................................14
+             7.1 Registration.........................................14
+             7.2 Referral Plan........................................14
+             7.3 License..............................................15
+             7.4 Warranty.............................................15
+         8.0 Revision History.........................................16
+         9.0 Other MarshallSoft Computing Products for C..............17
+             9.1 The Personal Communications Library for C............17
+             9.2 The Personal Protocol Library for C..................17
+             9.3 The EMS Expanded Memory Library for C................18
+
+
+
+
+
+
+
+
+
+
+
+        LZW4C Users Manual                                     Page 2
+         1.0 Introduction
+
+
+         LZW4C  consists  of a variable code size implementation of the LZW
+         (Lempel-Ziv-Welch) algorithm  for  compressing  and  decompressing
+         data.   LZW does particularly well on text files, achieving better
+         than a 50 % compression ratio for many files.
+
+         The LZW algorithm is considered to be  one  of  the  best  general
+         purpose  algorithms  available  today.   The new high speed modems
+         that employ on-the-fly data compression (such as  MNP  5.0  &  the
+         V.42 bis international standard) use the LZW algorithm, as well as
+         such well known utility programs such as PKZIP.
+
+         The  LZW4C  library  is  designed  to be used in a wide variety of
+         situations. Some of the possible uses include:
+
+         1) Compression and expanding files on disk.
+         2) Compressing files "on the fly" before  sending  over  a  modem,
+            and then expanding on the receiving end.
+         3) Compression of data files used by your application program such
+            as help files, graphics screens, etc. The compressed data files
+            are then expanded as they are loaded by the application.
+
+
+         1.1 Distribution Files
+
+         The distribution files are as follows:
+
+          1) LZW4C_C.LIB -- COMPACT model library.
+          2) LZW4C_L.LIB -- LARGE model library.
+          3) LZW4C_L.MIX -- LARGE model library (MIX only).
+          4) LZW4C.DOC   -- This documentation file.
+          5) LZW4C.INV   -- Invoice file.
+          6) COMPRESS.C  -- Data compression example program.
+          7) EXPAND.C    -- Data expansion example program.
+          8) LZW4C.H     -- Library prototypes.
+          9) *._T_       -- Turbo C makefiles.
+         10) *._M_       -- Microsoft C makefiles.
+         11) X_*.BAT     -- MIX Power C batch file.
+         12) RW_IO.C     -- Reader/Writer I/O source file.
+         13) RW_IO.H     -- Reader/Writer prototype file.
+         14) DIR_IO.C    -- Directory I/O source file.
+         15) DIR_IO.H    -- Directory I/O prototype file.
+         16) SAYERROR.C  -- Displays text error messages.
+         17) TEST_LZW.C  -- LZW test driver program.
+         18) MK_ARC.C    -- File archiving program.
+         19) UN_ARC.C    -- File un-archiving program.
+         20) SEE_ARC.C   -- Program to list archived files.
+         21) EX_ARC.C    -- Program to extract file from archive.
+
+         Registered users also receive:
+
+          1) LZW4C.ASM   -- SOURCE CODE for the LZW4C libraries.
+          2) MAKE_C.BAT  -- Batch file to make LZW4C_C.LIB
+          3) MAKE_L.BAT  -- Batch file to make LZW4C_L.LIB
+          4) MAKE_XL.BAT -- Batch file to make LZW4C_L.MIX
+
+
+        LZW4C Users Manual                                     Page 3
+         1.2 Compiling the Library
+
+
+         LZW4C  requires  rather  large  work  buffers  at  run time.  This
+         requires "far" data pointers which in turn  means  that  you  must
+         compile  using  either  the COMPACT memory model (with "near" code
+         pointers) or the LARGE memory model (with "far"  code  addresses).
+         There are, therefore, two memory model libraries provided:
+
+         lzw4c_c.lib  -- Compact memory model library.
+         lzw4c_l.lib  -- Large memory model library.
+         lzw4c_l.mix  -- Large memory model library (MIX only).
+
+         The registered user can re-compile the source code (source code is
+         provided in the registered version only) for the library using one
+         of the two provided batch files:
+
+         make_c.bat  -- Creates lzw4c_c.lib.
+         make_l.bat  -- Creates lzw4c_l.lib.
+         make_xl.bat -- Create lzw4c_c.mix.
+
+         Using  the  COMPACT memory model will result in a slightly smaller
+         and faster executable than using the LARGE memory model.  Be  sure
+         to compile all of your code for the correct memory model. Refer to
+         your compiler manual for more information on memory models.
+
+
+         1.3 User Support
+
+         We  want you to be successful in developing your application using
+         our libraries! We depend on our customers to let us know what they
+         need in a library.  This means we are committed to  providing  the
+         best  libraries  that  we  can.   If  you  have any suggestions or
+         comments, please write to us or give us a call.
+
+         If  you  are having a problem using LZW4C or any of our libraries,
+         call (205) 881-4630 between 5 PM  and  9  PM  CST  Monday  through
+         Friday.  You can call at other times and leave a message, and call
+         back  later during our regular business hours for a reply. You can
+         also FAX us at this same number at any time.
+
+         You  may  also  call our 24 hour BBS (2400 baud, no parity, 8 data
+         bits, 1 stop bit) at any time.  The BBS will  contain  the  latest
+         shareware version of LZW4C, messages, and other related files. All
+         files  are  in standard ZIP format. You can leave a message on the
+         BBS, and we will usually have a reply  ready  for  you  within  24
+         hours.   The dedicated telephone number is 205-880-9748.  Set your
+         modem for 1200 to 9600 baud, 8 data bits, no parity, one stop bit.
+
+         The  MarshallSoft  Computing,  Inc.   newsletter  "Comm  Talk"  is
+         published quarterly.  It discusses various communications problems
+         and solutions using PCL4C (the communications library) as well  as
+         related  information  such as data compression issues.  Registered
+         users receive a one year  complimentary  subscription  when  first
+         registering  and  for  each  update  purchased.  However, overseas
+         customers who  want  the  newsletter  must  pay  $5  for  postage.
+         Additional  one year subscriptions are $15 plus $5 for postage for
+         overseas customers.
+
+        LZW4C Users Manual                                     Page 4
+         1.4 ASP Ombudsman
+
+
+         MarshallSoft  Computing,  Inc.  is  a member of the Association of
+         Shareware Professionals (ASP).  ASP wants to make  sure  that  the
+         shareware principle works for you.  If you are unable to resolve a
+         shareware-related  problem  with  an  ASP member by contacting the
+         member directly, ASP may be able to help. The  ASP  Ombudsman  can
+         help you resolve a dispute or problem with an ASP member, but does
+         not provide technical support for members' products.  Please write
+         to  the  ASP  Ombudsman  at  545  Grover  Road,  Muskegon,  MI USA
+         49442-9427, Fax 616-788-2765, or send  a  CompuServe  message  via
+         CompuServe Mail to ASP Ombudsman 70007,3536.
+
+
+         1.5 Installation
+
+
+         (1)  Microsoft C, Borland & Turbo C, and MIX Power C compilers are
+         supported. However, the code should work with most any C compiler.
+         Before installation of LZW4C, your C compiler  should  already  be
+         installed  on your system and tested. If you are not familiar with
+         makefiles, refer to your compiler manual. If  you  are  using  the
+         interactive environment for Quick C or Turbo C, be sure to compile
+         with the memory model corresponding to the LZW4C library used.
+
+         (2) Make a backup  copy  of  your  distribution  disk.   Put  your
+         original distribution disk in a safe place.
+
+         (3)  Create  a  work  directory  on  your work disk (normally your
+         harddisk). For example, to create a work directory named LZW4C, we
+         first log onto the work disk and then type:
+
+                               MKDIR LZW4C
+
+         (4)  Copy  all the files from your backup copy of the distribution
+         disk to your work directory.  For example, to  copy  from  the  A:
+         drive to your work directory, we type:
+
+                              CD LZW4C
+                              COPY A:*.*
+
+         (5) Compile COMPRESS.C, EXPAND.C, TEST_LZW.C  and  link  with  the
+         appropriate LZW4C library (they use the COMPACT library except for
+         MIX Power C). For example, to make COMPRESS.EXE:
+
+             a) Borland Turbo C: Type
+
+                  MAKE -fCOMPRESS._T_
+
+             b) Microsoft C: Type
+
+                  MAKE COMPRESS._M_
+
+             c) MIX Power C: Type (LARGE model only)
+
+                  X_COMPRESS
+
+
+        LZW4C Users Manual                                     Page 5
+         2.0 The LZW Algorithm
+
+
+         The following discussion of the LZW algorithm is meant to  provide
+         a  high  level  overview  of  LZW.  For those interested in a more
+         detailed explanation, several good books  are  available  on  data
+         compression.
+
+         The original research papers on what is now called LZW compression
+         are:
+
+             J. ZIV and A. Lempel,
+             "A Universal Algorithm for Sequential Data Compression",
+             IEEE Transactions on Information Theory, May 1977.
+
+             Terry Welch,
+             "A Technique for High-Performance Data Compression",
+              Computer, June 1984.
+
+
+         2.1 LZW Compression
+
+
+         The  LZW  compressor  reads  8-bit  bytes  from  a data source and
+         outputs N-bit codes each of which identifies a previously  defined
+         string.   The  value  of  N starts at 9. Thus, codes 0 through 255
+         (0xff) correspond with the standard character set, while codes 256
+         (0x100) through 511 (0x1ff) correspond to a byte-byte  pair  or  a
+         code-byte pair in the code table. After code 511 is output, 10 bit
+         codes  are used. This is repeated until the maximum number of bits
+         per code is reached. LZW4C can use a maximum value of 12, 13 or 14
+         bits per code. The recommended value is 14.
+
+         The LZW compressor builds a code table as it compresses data.  The
+         code table consists of previously encountered strings.
+
+         The basic LZW compression algorithm is as follows:
+
+             STRING = get first input byte
+             while there is more input data
+               {BYTE = get next input byte
+                if STRING+BYTE is in code table
+                   STRING=STRING+BYTE
+                else
+                  {output code for STRING
+                   add STRING+BYTE to code table
+                   STRING = BYTE
+                  }
+              }
+             output the code for STRING
+
+
+
+
+
+
+
+
+
+        LZW4C Users Manual                                     Page 6
+         2.2 LZW Expansion
+
+
+         The LZW expansion routine reads the N-bit codes previously created
+         by  the  LZW  compressor  and  reconstructs  the  code  table  (as
+         previously constructed by the compressor) as it is outputing 8-bit
+         bytes.  A code corresponds to a single byte (the first  256  codes
+         from 0x00 through 0xff), or a byte-byte pair in the code table, or
+         a  code-byte  pair  in the code table. In the later case, the code
+         part of the code-byte pair refers to another defined code pair  in
+         the  table.   As  each  code is read in, it is located in the code
+         table and the corresponding 8-bit bytes are  output.   This  means
+         that  codes  must be defined before they are needed for expansion.
+         Unlike  older  dictionary  based  compression  schemes,  the  code
+         dictionary  produced by the compressor routine does not have to be
+         provided to the expansion routine.
+
+         The basic LZW de-compression algorithm is as follows:
+
+             OLDCODE = input first code
+             output OLDCODE
+             while there is more input data
+               {NEWCODE = get next input code
+                STRING = translation of NEWCODE
+                output STRING
+                BYTE = 1st byte of STRING
+                add OLDCODE+BYTE to the code table
+                OLDCODE = NEWCODE
+               }
+
+         2.3 Implementation
+
+
+         The LZW4C library is written in assembly language.  Any  Microsoft
+         or  compatible assembler will assemble it. The decision to program
+         LZW4C in assembler was made in order to get the  absolute  maximum
+         performance  possible.  Although  optimized  C is very good, it is
+         still bigger and slower than hand optimized assembler.
+
+         The LZW algorithm requires more temporary working data space  than
+         is  available  in  the  SMALL or MEDIUM memory models.  Therefore,
+         there are no SMALL or MEDIUM memory model libraries provided,  but
+         there  are  COMPACT  (lzw4c_c.lib)  and LARGE (lzw4c_l.lib) memory
+         model libraries.
+
+         Use the COMPACT memory model when your code will fit into 64KB  or
+         less, otherwise you must use the LARGE memory model. Refer to your
+         compiler manual for a complete discussion of memory models.
+
+         Using a maximum of 12 bits per code (see the InitLZW()  function),
+         25105  bytes  are  allocated for table space.  This value jumps to
+         45145 bytes when using 13 bytes and  90205  bytes  when  using  14
+         bits. The best compression is given using 14 bits per code.
+
+
+
+
+
+
+        LZW4C Users Manual                                     Page 7
+         3.0 Example Programs
+
+
+         Six example programs are provided.  Each example program should be
+         compiled with the provided makefile.  These example  programs  are
+         meant  to  demonstrate  various  ways in which the LZW compression
+         library can be used.
+
+         If you are using an integrated  compiler  environment  instead  of
+         makefiles,  notice  that each program is compiled with the COMPACT
+         memory model.
+
+
+         3.1 COMPRESS
+
+
+         The  program  COMPRESS  is  provided  as  both  a  standalone  LZW
+         compression  program,  and  as  an example of how to use the LZW4C
+         library to compress a file. In order to run COMPRESS, type
+
+             COMPRESS <infile> <outfile>
+
+         For example, to compress LZW4C.DOC to LZW4C.LZW, type
+
+             COMPRESS LZW4C.DOC LZW4C.LZW
+
+
+         3.2 EXPAND
+
+
+         The  program  EXPAND  is  provided  as  both  a   standalone   LZW
+         de-compression  program, and as an example of how to use the LZW4C
+         library to de-compress a file. In order to run EXPAND, type
+
+             EXPAND <infile> <outfile>
+
+         For example, to de-compress LZW4C.LZW to LZW4C.DOC, type
+
+             COMPRESS LZW4C.LZW LZW4C.DOC
+
+         Of course, you can only decompress a file that has been compressed
+         with COMPRESS.
+
+
+         3.3 MK_ARC
+
+
+         The program MK_ARC is used to create an archive file. For example,
+         to  create  an  archive named C.ARF consisting of all files ending
+         with the extension '.C', type:
+
+             MK_ARC *.C C.ARF
+
+
+
+
+
+
+
+        LZW4C Users Manual                                     Page 8
+         3.4 UN_ARC
+
+
+         The program UN_ARC is used to un-archive  the  files  archived  by
+         MK_ARC. For example, to un-archive C.ARF, type:
+
+             UN_ARC C.ARF
+
+         Note  that  the  UN_ARC  program  can be modified to provide for a
+         customized product installation program.
+
+
+         3.5 SEE_ARC
+
+
+         The  program SEE_ARC is used to list the files in any archive file
+         created with MK_ARC. For example, to see the files in C.ARF:
+
+             SEE_ARC C.ARF
+
+
+         3.6 EX_ARC
+
+
+         The  program EX_ARC is used to extract a file from an archive. For
+         example, to extract DEMO.C from C.ARG, type:
+
+             EX_ARC DEMO.C C.ARF
+
+
+         3.7 TEST_LZW
+
+
+         The program TEST_LZW is used to compress, expand, and  verify  one
+         or  more  files. It's purpose is for you to test the LZW4C library
+         on your own files.  Your files are never modified.   However,  you
+         can  NOT  specify  a file named "XXX.XXX" or "YYY.YYY" since these
+         files are work files used by  COMPRESS  and  EXPAND.   Compression
+         ratios  (  compressed_size  / original_size ) are printed for each
+         file compressed. For example, to test all files ending with a  *.C
+         extension, type:
+
+             TEST_LZW *.C
+
+         After compiling TEST_LZW, run it  against  a  large  directory  of
+         files as a test of the library. TEST_LZW can also be  run  with  a
+         maximum  of  12  or  13  bits per code rather than the standard 14
+         bits (the preferred value). To test all files ending  with  a  *.C
+         extension using a maximum of 13 bits per code, type:
+
+             TEST_LZW *.C 13
+
+         All example code should be compiled using the COMPACT memory model
+         (FAR data pointers, NEAR code pointers). You may  create  a  LARGE
+         memory model version of the above five programs by re-compiling as
+         LARGE memory model programs.
+
+
+
+        LZW4C Users Manual                                     Page 9
+         4.0 Reader & Writer Functions
+
+
+         Both  the  compression and expansion routines in the LZW4C library
+         use Reader and Writer functions supplied by  the  library  caller.
+         They are provided as a means of giving the caller complete control
+         over  the  source  and  destination  of  the  data  stream  during
+         compression and expansion.
+
+         A reader function is not limited to reading from disk. It may read
+         from  any  data source as long as it returns a -1 when there is no
+         more data to be read. Similiarly, a writer function may  write  to
+         any data sink.
+
+         A simple example of suitable reader and writer functions which can
+         be used to compress and expand files on disk are as follows:
+
+             int Reader()
+             {
+              return(fgetc(FileInp));
+             }
+
+             int Writer(Byte)
+             char Byte;
+             {
+              return(fputc(Byte,FileOut));
+             }
+
+         where   FileInp   correspond  to  the  input  stream  and  FileOut
+         corresponds to the output stream:
+
+             FILE *FileInp;
+             FILE *FileOut;
+
+             FileInp = fopen(<input_file_name>,"rb");
+             FileOut = fopen(<output_file_name>,"wb");
+
+         Note that the Reader returns a -1 for an end  of  data  condition.
+         Data is returned as an integer with the high byte set to 0.  Thus,
+         the  only  integers  can  can  be  returned  by  the Reader are -1
+         (0xffff) and 0 (0x0000) to 255 (0x00ff).
+
+         If you remove data from a character buffer, be sure  to  zero  out
+         the  high  order byte (AND with 0x00ff) unless you are returning a
+         -1 (EOF).  For an example,  examine  the  code  for  the  Reader()
+         function in RW_IO.C.
+
+
+
+
+
+
+
+
+
+
+
+
+
+        LZW4C Users Manual                                     Page 10
+         5.0 Library Functions
+
+
+         There are four functions in the LZW4C library as follows:
+
+
+         5.1 InitLZW
+
+
+         Function:     Initialize library
+
+         Prototype:    int InitLZW(Alloc,BitCode)
+                       void (*Alloc)(); /* pointer to allocate function */
+                       int BitCode;     /* maximum bits per code */
+
+         Description:  The  InitLZW  function  is  used  to initialize  the
+                       library.  The first argument is the function name of
+                       a user supplied memory allocation function.  Use the
+                       standard C library function malloc() unless you wish
+                       to use your own memory management function.
+
+                       The second argument <BitCode> is the maximum  number
+                       of  bits  used  per code in the compression process.
+                       Legal values are  12,  13,  and  14  (the  preferred
+                       value).  Smaller values will use less memory but not
+                       compress as tightly.
+
+         Returns:      -2 : (CANNOT_ALLOCATE) -- if unable to allocate.
+                       -5 : (BAD_BITCODE) -- BitCode not 12, 13, or 14.
+                        0 : (AOK) -- no error.
+
+         Example:      /* initialize LZW4C */
+                       char *malloc();
+                       InitLZW(malloc,14);
+
+
+         5.2 TermLZW
+
+
+         Function:     Terminate library
+
+         Prototype:    int TermLZW(Free)
+                       void (*Free)();  /* pointer to free function */
+
+         Description:  The  TermLZW  function  is  used  to  terminate  the
+                       library after all processing is  done.   The  single
+                       argument  is  the  function  name of a user supplied
+                       memory de-allocation function.  This is primarily  a
+                       way   to   free memory allocated by InitLZW. Use the
+                       standard C library function free() unless  you  wish
+                       to use your own memory management free function.
+
+         Returns:      0 : (AOK) -- no error.
+
+         Example:      /* terminate LZW4C */
+
+                       TermLZW(free);
+
+
+        LZW4C Users Manual                                     Page 11
+         5.3 Compress
+
+
+         Function:     Compresses a data set.
+
+         Prototype:    int Compress(Reader,Writer)
+                       int (*Reader)();     /* pointer to Reader() */
+                       int (*Writer)();     /* pointer to Writer() */
+
+         Description:  The  Compress  function  is used to compress  a data
+                       set.  The Reader function always  returns  the  next
+                       input  byte.  The  Writer function consumes the next
+                       output byte. Refer to the section  on  Reader/Writer
+                       I/O.
+
+         Returns:      -4 : (NOT_READY) -- Didn't call InitLZW() first.
+                        0 : (AOK) -- No error.
+
+         Example:      /* compress a file */
+                       FILE *FileInp, *FileOut;
+                       FileInp = fopen("LZW4C.DOC","rb");
+                       FileOut = fopen("LZW4C.LZW","wb");
+                       Compress(Reader,Writer);
+
+                       int Reader()
+                       {return(fgetc(FilePtr));}
+
+                       int Writer(Byte)
+                       int Byte;
+                       {return(fputc(Byte,FilePtr));}
+
+
+         5.4 Expand
+
+
+         Function:     Expands a file.
+
+         Prototype:    int Expand(Reader,Writer)
+                       int (*Reader)();     /* pointer to Reader() */
+                       int (*Writer)();     /* pointer to Writer() */
+
+         Description:  The  Expand  function is used to de-compress  a file
+                       previously compressed with  the  Compress  function.
+                       The  Reader  function  always returns the next input
+                       byte.  The Writer function consumes the next  output
+                       byte.  Refer  to  the  section on Reader/Writer I/O.
+
+         Returns:      -1 : (EXPANSION_ERROR)  -- File not compressed by
+                             the compress function.
+                        0 : (AOK) -- No error.
+
+         Example:      /*  de-compress a file */
+                       FILE *FileInp, *FileOut;
+                       FileInp = fopen("LZW4C.DOC","rb");
+                       FileOut = fopen("LZW4C.LZW","wb");
+                       Expand(Reader,Writer);
+
+
+
+        LZW4C Users Manual                                     Page 12
+         6.0 Error Codes
+
+
+         Be  sure and check the return codes from each LZW4C function call.
+         There are only 5 error codes returned by the LZW4C  library  other
+         than  0  (no  error). All error codes are negative numbers.  Their
+         numerical values are in the  LZW4C.H  file.  Each  error  code  is
+         returned by a library function as follows:
+
+         ****************************************************************
+         *    Error Name    *  IntLZW  *  TermLZW * Compress *  Expand  *
+         ****************************************************************
+         * EXPANSION_ERROR  *    No    *    No    *    No    *    Yes   *
+         * CANNOT_ALLOCATE  *    Yes   *    No    *    No    *    No    *
+         * INTERNAL_ERROR   *    Yes   *    No    *    No    *    No    *
+         * NOT_READY        *    No    *    No    *    Yes   *    Yes   *
+         * BAD_BITCODE      *    Yes   *    No    *    No    *    No    *
+         ****************************************************************
+
+
+         6.1 EXPANSION_ERROR
+
+         An EXPANSION_ERROR error is returned only by the Expand()  library
+         function. It is caused by attempting to expand a file that was not
+         compressed   by  the  Compress()  function.  Note,  however,  that
+         Expand() may expand a file that was not compressed  by  Compress()
+         without returning an EXPANSION error.
+
+         6.2 CANNOT_ALLOCATE
+
+         A  CANNOT_ALLOCATE error is returned only by the InitLZW() library
+         function.  It is  caused  when  the  Alloc()  function  passed  to
+         InitLZW()  returns  a  NULL  pointer,  indicating  that  it cannot
+         allocate sufficient memory.
+
+         6.3 INTERNAL_ERROR
+
+         An INTERNAL_ERROR error is returned only by the InitLZW()  library
+         function  and  only  in  the  shareware  version.  It is caused by
+         modification of the Shareware screen. You should  never  get  this
+         error.
+
+         6.4 NOT_READY
+
+         A NOT_READY error is  returned  by  the  Compress()  and  Expand()
+         library  functions. It is caused by calling Compress() or Expand()
+         without first calling InitLZW().
+
+         6.5 BAD_BITCODE
+
+         A  BAD_BITCODE  error  is returned from InitLZW() when specifing a
+         BitCode of other than 12, 13, or 14.
+
+
+
+
+
+
+
+        LZW4C Users Manual                                     Page 13
+         7.0 Legal Issues
+
+         7.1 Registration
+
+         If you wish to register the LZW4C Library, please send $45 plus $3
+         S&H ($6 outside of North America) to:
+
+                  MarshallSoft Computing, Inc.
+                  Post Office Box  4543
+                  Huntsville AL 35815
+
+         We accept  American  Express  (account  number,  expiration  date,
+         exact  name  on  your  card,  and  complete  AmEx  billing address
+         required), checks in US dollars  drawn  on  a  US  bank,  purchase
+         orders  (POs)  from  recognized  US schools and companies listed in
+         Dun &  Bradstreet,  and  COD  (street  address  and  phone  number
+         required)  within  the USA (plus a $3 COD charge).  Print the file
+         PCL4C.INV if an invoice  is  needed.
+
+         You  can  also  order LZW4C from The Public Software Library (PSL)
+         with your MC, Visa, AmEx, or Discover card by calling 800-242-4PSL
+         (from overseas: 713-524-6394) or by  FAX  at  713-524-6398  or  by
+         CompuServe  at  [71355,470].  THESE NUMBERS ARE FOR ORDERING ONLY.
+         The product number for LZW4C is 10910.
+
+         If  you  wish  to  update from an older version of LZW4C, send $15
+         plus  $3  S&H  ($6 outside  of  North  America).  Updates  must be
+         ordered directly from MarshallSoft Computing.
+
+         The registered package includes:
+
+         o  Small, medium, compact & large LZW4C libs w/o shareware screen.
+         o  Assembler source code for the library.
+         o  Laser printed Users Manual.
+         o  Telephone / FAX / BBS  support for one year.
+
+         Print  the  file LZW4C.INV if an invoice is needed. The registered
+         user will receive the latest version of LZW4C shipped by  two  day
+         priority  mail  (packet  airmail  overseas).   A 5.25" diskette is
+         provided unless a 3.5" diskette is requested.
+
+
+         6.2 Referral Program
+
+
+         The  registered  user  will  receive  a $5 certificate towards any
+         MarshallSoft  Computing  product  by  referring  a  new   customer
+         (someone  who  has  never registered anything with us) paying full
+         price ($55).  The new customer must identify you at the  time  the
+         order is placed.  You will be mailed a $5 certificate when the new
+         registration is paid.
+
+
+
+
+
+
+
+
+        LZW4C Users Manual                                     Page 14
+         7.2 License
+
+
+         MarshallSoft  Computing,  Inc. grants the registered user of LZW4C
+         the right to use  the  LZW4C  library  (in  object  form)  in  the
+         development   of  any  software  product  without  any  royalties.
+         However,  the  source  code  for  the   library   (LZW4C.ASM)   is
+         copyrighted  by  MarshallSoft  Computing  Inc.,  and  may  not  be
+         released in whole or in part.
+
+
+         7.3 Warranty
+
+
+         MARSHALLSOFT COMPUTING, INC. DISCLAIMS ALL WARRANTIES RELATING  TO
+         THIS  SOFTWARE,  WHETHER  EXPRESSED  OR IMPLIED, INCLUDING BUT NOT
+         LIMITED TO ANY IMPLIED WARRANTIES OF MERCHANTABILITY  AND  FITNESS
+         FOR  A  PARTICULAR  PURPOSE, AND ALL SUCH WARRANTIES ARE EXPRESSLY
+         AND SPECIFICALLY DISCLAIMED. NEITHER MARSHALLSOFT COMPUTING,  INC.
+         NOR ANYONE ELSE WHO HAS BEEN INVOLVED IN THE CREATION, PRODUCTION,
+         OR  DELIVERY  OF  THIS  SOFTWARE SHALL BE LIABLE FOR ANY INDIRECT,
+
+         CONSEQUENTIAL, OR INCIDENTAL DAMAGES ARISING OUT  OF  THE  USE  OR
+         INABILITY  TO  USE  SUCH  SOFTWARE EVEN IF MARSHALLSOFT COMPUTING,
+         INC.  HAS BEEN ADVISED OF  THE  POSSIBILITY  OF  SUCH  DAMAGES  OR
+         CLAIMS. IN NO EVENT SHALL MARSHALLSOFT COMPUTING, INC.'S LIABILITY
+         FOR ANY SUCH DAMAGES EVER EXCEED THE PRICE PAID FOR THE LICENSE TO
+         USE  THE SOFTWARE, REGARDLESS OF THE FORM OF THE CLAIM. THE PERSON
+         USING  THE  SOFTWARE  BEARS  ALL  RISK  AS  TO  THE  QUALITY   AND
+         PERFORMANCE OF THE SOFTWARE.
+
+         Some  states  do not allow the exclusion of the limit of liability
+         for consequential or incidental damages, so the  above  limitation
+         may not apply to you.
+
+         This  agreement  shall  be  governed  by  the laws of the State of
+         Alabama and shall inure to the benefit of Marshallsoft  Computing,
+         Inc.   and  any successors, administrators, heirs and assigns. Any
+         action or proceeding brought by either  party  against  the  other
+         arising  out of or related to this agreement shall be brought only
+         in a STATE or FEDERAL COURT of competent jurisdiction  located  in
+         Madison County, Alabama. The parties hereby consent to in personam
+         jurisdiction of said courts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        LZW4C Users Manual                                     Page 15
+         8.0 Revision History
+
+
+         Version 1.0 -- October 8, 1992
+
+         o  Original release.
+
+         Version 1.1 -- November 11, 1992
+
+         o  Added MK_ARC.C example program.
+         o  Added UN_ARC.C example program.
+
+         Version 1.2 -- March 1, 1993
+
+         o  Added SEE_ARC example program.
+         o  Minor speed improvements.
+
+         Version 1.3 -- Sept 10, 1993
+
+         o  Added BitCode parameter to InitLZW.
+         o  LZW4C.H modified for use with both C and C++.
+
+         Version 1.4 -- June 1, 1994
+
+         o  Added EX_ARC.C example program.
+         o  Minor documentation changes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        LZW4C Users Manual                                     Page 16
+         9.0 Other MarshallSoft Computing Products for C
+
+
+         Shareware  versions  of  all  MarshallSoft  Computing products are
+         available on our user support BBS at 205-880-9748  (1200  to  9600
+         baud, 8N1).
+
+
+         9.1 The Personal Communications Library for C
+
+
+         The Personal Communications Library for the C Language (PCL4C)  is
+         an  asynchronous  communications  library designed for experienced
+         software  developers  programming  in  C.   Four   compilers   are
+         supported:  Microsoft  Optimizing  C,  Microsoft  Quick C, Borland
+         Turbo C, and MIX Power  C.   An  IBM  PC/XT/AT  or  compatible  is
+         required.  The PCL features:
+
+         o SMALL, COMPACT, MEDIUM & LARGE memory models.
+         o 36 communications and support functions.
+         o Supports the high performance INS16550 UART.
+         o Supports hardware (RTS/CTS) flow control.
+         o Interrupt driven transmitter (optionally) & receiver.
+         o Supports 300 baud to 115,200 baud.
+         o Supports COM1 through COM16.
+         o Adjustable receive queues from 8 bytes to 32 KB.
+         o Control-BREAK error exit.
+         o 17 communications error conditions trapped.
+         o Support the PC/4 and PC/8 DigiBoards.
+         o Supports the BB1004, BB1008, and BB2016 BOCA boards.
+         o Allows 4 - 16 ports to run concurrently.
+         o Complete modem control & status.
+         o Written in assembly language for small size & high speed.
+         o Terminal program featuring XMODEM, YMODEM, & YMODEM-G.
+
+         The Personal Communications Library for C (PCL4C) is available for
+         $65 plus $3 S&H ($6 S&H overseas). It may be ordered at  the  same
+         time  as  the  Personal  Protocol  Library for $75 plus $3 S&H ($6
+         overseas).
+
+
+         9.2 The Personal Protocol Library for C
+
+
+         The  Personal  Protocol  Library  (PPL)  consist of a state driven
+         library  which  implements  the  XMODEM,  XMODEM-CRC,   XMODEM-1K,
+         XMODEM-G,  YMODEM,  and  YMODEM-G  file  transfer protocols.  This
+         allows  the  programmer  to  run   multiple   protocol   transfers
+         simultaneously while interacting with the user at the keyboard.
+
+         The  Personal  Protocol Library for C (PPL4C) is available for $35
+         plus $3 S&H ($6 S&H overseas). Both the Communications library and
+         the Protocol library can be ordered together for $75.
+
+         The PPL requires the Personal Protocol Library for  C  (PCL4C)  as
+         described above.
+
+
+
+        LZW4C Users Manual                                     Page 17
+         9.3 The EMS Expanded Memory Library
+
+         The  EMS4C   library   implements   version   3.2   of   the   LIM
+         (Lotus-Intel-Microsoft) specification for expanded memory. It will
+         run with either version 3.2 or 4.0 of the LIM specification.
+
+         The EMM4C library (included with the EMS4C library) is an expanded
+         memory manager which allows C programmers to allocate and free EMS
+         (expanded)  memory similiar to malloc() and free() in the standard
+         C runtime library. Both EMM4C and EMS4C require that  your  system
+         be  configured  with  expanded (EMS) memory. But, 386 & up systems
+         can use extended memory as expanded memory.
+
+         The EMS Expanded Memory Library for C is available for $35 plus $3
+         S&H ($6 S&H overseas).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        LZW4C Users Manual                                     Page 18
