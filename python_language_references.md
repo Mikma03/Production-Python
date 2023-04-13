@@ -1,5 +1,7 @@
 <!-- TOC -->
 
+- [How Python actually running](#how-python-actually-running)
+  - [By Fred Baptiste](#by-fred-baptiste)
 - [Garbage Collection - Fred Baptiste course](#garbage-collection---fred-baptiste-course)
 - [Context Manager](#context-manager)
 - [Functions in Python](#functions-in-python)
@@ -25,15 +27,6 @@
 - [Design patterns](#design-patterns)
   - [InfoShare - introduction](#infoshare---introduction)
     - [Factory method](#factory-method)
-- [Python Optimization](#python-optimization)
-  - [Fred Baptiste course](#fred-baptiste-course)
-    - [Interning, String Interning, Peephole](#interning-string-interning-peephole)
-    - [Decimals: Performance Considerations](#decimals-performance-considerations)
-  - [High Performance Python - Profiling to Find Bottlenecks](#high-performance-python---profiling-to-find-bottlenecks)
-  - [Expert Python Programming - Code Optimization](#expert-python-programming---code-optimization)
-  - [py-spy: Sampling profiler for Python programs](#py-spy-sampling-profiler-for-python-programs)
-  - [PyO3 - Rust and Python](#pyo3---rust-and-python)
-  - [faster Python code](#faster-python-code)
 - [Python extra features](#python-extra-features)
   - [Ellipsis in Python](#ellipsis-in-python)
 - [Python features to keep in mind when coding](#python-features-to-keep-in-mind-when-coding)
@@ -48,6 +41,12 @@
   - [Extended Unpacking](#extended-unpacking)
 
 <!-- /TOC -->
+
+# How Python actually running
+
+## By Fred Baptiste
+
+> https://www.udemy.com/course/python3-fundamentals/learn/lecture/35144960#overview
 
 # Garbage Collection - Fred Baptiste course
 
@@ -151,40 +150,6 @@
 
 ---
 
-# Python Optimization
-
-## Fred Baptiste course
-
-### Interning, String Interning, Peephole
-
-> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7192348#overview > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368670#overview > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7368672#overview
-
-### Decimals: Performance Considerations
-
-> https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7649326#overview
-
-## High Performance Python - Profiling to Find Bottlenecks
-
-> https://learning.oreilly.com/library/view/high-performance-python/9781492055013/ch02.html
-
-## Expert Python Programming - Code Optimization
-
-> https://learning.oreilly.com/library/view/expert-python-programming/9781801071109/Text/Chapter_13.xhtml#_idParaDest-258
-
-## py-spy: Sampling profiler for Python programs
-
-> https://github.com/benfred/py-spy
-
-## PyO3 - Rust and Python
-
-> https://pyo3.rs/v0.18.1/
-
-## faster Python code
-
-> https://pythonspeed.com/
-
----
-
 # Python extra features
 
 ## Ellipsis in Python
@@ -221,7 +186,7 @@
 
 ## Enum
 
-> vhttps://www.infoshareacademy.online/products/python-poczatek/categories/4280613/posts/14370375
+> https://www.infoshareacademy.online/products/python-poczatek/categories/4280613/posts/14370375
 
 ---
 

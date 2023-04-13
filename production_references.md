@@ -19,13 +19,9 @@
 
 # Python tools and surroundings
 
-This part of the file is maily for gather useful links and materials for Python project: started from web to data sciecne. Mostly about Python additional surroundings not language itself.
+This section is a compilation of valuable resources and materials related to Python projects, ranging from web development to data science. The focus is on the Python ecosystem rather than the language itself, covering aspects such as testing, documentation, dependency management, and more.
 
-For example: testing, creating docs, building dependencies and so on.
-
-This part is very live and dynamic, because something still going on Python market.
-
-Nevertheless this part is important because could be used as reference repo and in the future as first line of defence in case of looking for python-prod materials and tips.
+This collection is continuously updated as the Python landscape evolves, making it a valuable reference and go-to source for Python-related tools, tips, and best practices.
 
 # Virtual environment
 
@@ -42,7 +38,12 @@ Nevertheless this part is important because could be used as reference repo and 
   - https://learning.oreilly.com/library/view/expert-python-programming/9781801071109/Text/Chapter_2.xhtml#:-:text=Modern%20Python%20Development%20Environments
 
 - Pipenv & Virtual Environments
+
   - https://docs.python-guide.org/dev/virtualenvs/
+
+- Fred Baptiste course
+  - https://www.udemy.com/course/python3-fundamentals/learn/lecture/35144942#overview
+  - https://www.udemy.com/course/python3-fundamentals/learn/lecture/35144950#overview
 
 # Testing Python Code
 
