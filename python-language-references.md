@@ -2,6 +2,8 @@
 
 - [How Python actually running](#how-python-actually-running)
   - [By Fred Baptiste](#by-fred-baptiste)
+- [Python Objects: everything is an object](#python-objects-everything-is-an-object)
+  - [By Fred Baptiste](#by-fred-baptiste-1)
 - [Garbage Collection - Fred Baptiste course](#garbage-collection---fred-baptiste-course)
 - [Context Manager](#context-manager)
 - [Functions in Python](#functions-in-python)
@@ -47,6 +49,14 @@
 ## By Fred Baptiste
 
 > https://www.udemy.com/course/python3-fundamentals/learn/lecture/35144960#overview
+
+
+# Python Objects: everything is an object
+
+## By Fred Baptiste
+
+> https://www.udemy.com/course/python3-fundamentals/learn/lecture/35149676#overview
+
 
 # Garbage Collection - Fred Baptiste course
 
