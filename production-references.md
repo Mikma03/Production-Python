@@ -101,6 +101,9 @@ This collection is continuously updated as the Python landscape evolves, making 
 - Authoring and maintaining documentation
   - https://learning.oreilly.com/library/view/publishing-python-packages/9781617299919/OEBPS/Text/08.htm#heading_id_3
 
+- YouTube: Adrian
+  - https://www.youtube.com/watch?v=L7Ry-Fiij-M&ab_channel=ArjanCodes
+
 # Debugging
 
 - Mastering Python - Second Edition - Debugging – Solving the Bugs
