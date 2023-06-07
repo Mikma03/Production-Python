@@ -44,17 +44,29 @@ ___
 ### String Methods
 
 <str>.capitalize()
+
 <str>.count(sub[, start[, end]])
+
 <str>.endswith(suffix[, start[, end]])
+
 <str>.find(sub[, start[, end]])
+
 <str>.index(sub[, start[, end]])
+
 <str>.isalnum()
+
 <str>.isdigit()
+
 <str>.islower()
+
 <str>.isupper()
+
 <str>.isspace()
+
 <str>.lower()
+
 <str>.upper()
+
 <str>.split(sep=None, maxsplit=-1)
 
 ___
@@ -128,7 +140,3 @@ for<var> in <iterable_or_sequence>:
 Code
 
 for <var> in range(start, stop, step)
-
-
-
-

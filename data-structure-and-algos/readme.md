@@ -1,8 +1,13 @@
 <!-- TOC -->
 
 - [Online materials](#online-materials)
+  - [Data structures road map](#data-structures-road-map)
+  - [Leetcode](#leetcode)
 - [Books](#books)
-  - [Chapter 16: What to Use and Why](#chapter-16-what-to-use-and-why)
+- [Online courses](#online-courses)
+- [GitHub repos](#github-repos)
+- [Important questions and steps](#important-questions-and-steps)
+- [Chapter 16 from John Canning Book](#chapter-16-from-john-canning-book)
   - [Key points from that chapter](#key-points-from-that-chapter)
     - [Analyzing the Problem](#analyzing-the-problem)
     - [What Kind of Data?](#what-kind-of-data)
@@ -14,16 +19,28 @@
       - [**Arrays**](#arrays)
       - [**Linked Lists**](#linked-lists)
       - [**Binary Search Trees**](#binary-search-trees)
-      - [Hash Tables](#hash-tables)
+      - [**Hash Tables**](#hash-tables)
 - [Data structures in Python: builtin](#data-structures-in-python-builtin)
+  - [List](#list)
+  - [Tuple](#tuple)
+  - [Set](#set)
+  - [Dictionary](#dictionary)
+  - [Deque](#deque)
+  - [Heapq](#heapq)
+  - [Counter](#counter)
+  - [Defaultdict](#defaultdict)
 
 <!-- /TOC -->
 
 # Online materials
 
-Data structures road map
+## Data structures road map
 
 - https://neetcode.io/roadmap
+
+## Leetcode
+
+- https://leetcode.com/problemset/all/
 
 # Books
 
@@ -31,7 +48,36 @@ Data Structures & Algorithms in Python
 
 - https://learning.oreilly.com/library/view/data-structures/9780134855912/
 
-## Chapter 16: What to Use and Why
+Algorytmy w Pythonie. Techniki programowania dla praktyków
+
+- https://helion.pl/ksiazki/algorytmy-w-pythonie-techniki-programowania-dla-praktykow-piotr-wroblewski,algpyt.htm#format/d
+
+# Online courses
+
+- https://neetcode.io/courses
+
+# GitHub repos
+
+- Minimal examples of data structures and algorithms in Python
+
+  - https://github.com/keon/algorithms
+
+- A collection of design patterns/idioms in Python Topics
+  - https://github.com/faif/python-patterns
+
+---
+
+# Important questions and steps
+
+1. Analyzing the Problem: What actually need to be done?
+2. What Kind of Data? That need to be clear.
+3. How Much Data?: Volume of data.
+4. What Creates the Data?: Maybe IoT or humans?
+5. What Operations and How Frequent? Read / Write etc.
+6. Who Will Maintain the Software?: Skills other developers
+7. Speed and Algorithms: Is speed important?
+
+# Chapter 16 from John Canning Book
 
 This chapter comes with some caveats. Of necessity, it’s very general. Every real-world situation is unique, so what we say here may not be the right answer to your problem. You need to analyze the problem to determine its characteristics and see whether they match those of the data structure or algorithm.
 
@@ -121,7 +167,7 @@ A tree provides fast O(log N) insertion, searching, and deletion. Traversal in k
 
 An unbalanced binary tree is much easier to program than one that balances itself, but unfortunately ordered data can reduce its performance to O(N) time, no better than a linked list. If you’re certain the data will be inserted in random order with respect to the key, there’s not much point in using a balanced tree.
 
-#### Hash Tables
+#### **Hash Tables**
 
 Hash tables have the most desirable performance for almost all data items referenced by a key. The keys can be any data type that might be considered an index, including integers. The O(1) performance for searching, insertion, and deletion by key are the fastest possible.
 
@@ -133,22 +179,40 @@ Consider a hash table
 
 - When the complexities of the hashing and collision resolution algorithms are handled by experienced developers.
 
+> **This part will be continiued**
+
 # Data structures in Python: builtin
 
 In Python, several data structures are known for their efficiency in different use cases. It's essential to choose the right data structure based on the problem you are trying to solve. Here are some of the most efficient data structures in Python:
 
+## List
+
 - List: Lists are versatile and widely used in Python. They allow for fast O(1) access and modification by index. However, insertion and deletion operations have O(n) complexity because elements must be shifted.
+
+## Tuple
 
 - Tuple: Tuples are similar to lists but immutable. They are faster and consume less memory than lists since they cannot be modified after creation. Tuples are ideal for storing fixed-size collections of related data.
 
+## Set
+
 - Set: Sets are unordered collections of unique elements. They are implemented as hash tables, which allow for fast O(1) average time complexity for insertions, deletions, and search operations. Sets are ideal for solving problems that involve deduplication or membership testing.
+
+## Dictionary
 
 - Dictionary (dict): Dictionaries are key-value pairs implemented as hash tables. They provide fast O(1) average time complexity for insertion, deletion, and search operations. Dictionaries are efficient for problems involving data organization and retrieval based on keys.
 
+## Deque
+
 - deque (collections module): Deques are double-ended queues, which are optimized for fast O(1) appends and pops from both ends. They are useful for implementing stacks and queues or other data structures requiring fast access at both ends.
+
+## Heapq
 
 - heapq (heapq module): Heapq provides an implementation of heap queue algorithm (priority queue) with O(log n) time complexity for insertion and extraction of the smallest element. It is useful for problems that require priority-based scheduling or maintaining a running list of the smallest or largest items.
 
+## Counter
+
 - Counter (collections module): Counter is a specialized dictionary subclass for counting elements in an iterable. It is efficient for counting frequency, finding the most common elements, or performing operations like addition and subtraction between counts.
+
+## Defaultdict
 
 - defaultdict (collections module): defaultdict is a dictionary subclass that provides a default value for a nonexistent key, specified upon initialization. It is useful for grouping and counting operations where keys might not be present initially.

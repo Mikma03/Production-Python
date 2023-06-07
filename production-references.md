@@ -11,8 +11,10 @@
 - [Debugging](#debugging)
 - [Packaging](#packaging)
   - [How to Dynamically Generate Requirements.txt file for Python Apps](#how-to-dynamically-generate-requirementstxt-file-for-python-apps)
+  - [Wheels](#wheels)
+  - [Book: Hypermodern Python Tooling](#book-hypermodern-python-tooling)
 - [Observing Application Behavior and Performance](#observing-application-behavior-and-performance)
-- [Logging in Python](#logging-in-python)
+  - [Logging in Python](#logging-in-python)
 - [Makefile - Python](#makefile---python)
 
 <!-- /TOC -->
@@ -99,6 +101,7 @@ This collection is continuously updated as the Python landscape evolves, making 
   - https://learning.oreilly.com/library/view/mastering-python/9781800207721/Text/Chapter_9.xhtml#:-:text=How%20to%20Use%20Sphinx%20and%20reStructuredText
 
 - Authoring and maintaining documentation
+
   - https://learning.oreilly.com/library/view/publishing-python-packages/9781617299919/OEBPS/Text/08.htm#heading_id_3
 
 - YouTube: Adrian
@@ -146,15 +149,31 @@ This collection is continuously updated as the Python landscape evolves, making 
 
 - https://www.youtube.com/watch?v=0ZeoruSobc4&list=PLnFWJCugpwfztr1ND_n0b_j-QXV20DHNj&index=4
 
+## Wheels
+
+Python wheels are a component of the Python ecosystem that greatly simplifies and accelerates the package installation process. They allow for faster installations and contribute to the stability of the package distribution process
+
+- https://realpython.com/python-wheels/
+
+## Book: Hypermodern Python Tooling
+
+With this hands-on guide, Python developers will learn how to forge the moving parts of a Python project into an easy-to-use toolchain, using state-of-the-art tools including Poetry, GitHub Actions, Dependabot, pytest, mypy, Flake8, and more.
+
+- https://learning.oreilly.com/library/view/hypermodern-python-tooling/9781098139575/
+
 # Observing Application Behavior and Performance
 
 - Expert Python Programming - Observing Application Behavior and Performance
   - https://learning.oreilly.com/library/view/expert-python-programming/9781801071109/Text/Chapter_12.xhtml#_idParaDest-244
 
-# Logging in Python
+## Logging in Python
 
 - ArjanCode: Python Logging: How to Write Logs
+
   - https://www.youtube.com/watch?v=pxuXaaT1u3k&ab_channel=ArjanCodes
+
+- Official Python docs
+  - https://docs.python.org/3.11/howto/logging-cookbook.html
 
 # Makefile - Python
 
