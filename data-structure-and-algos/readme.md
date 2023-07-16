@@ -7,7 +7,7 @@
 - [Online courses](#online-courses)
 - [GitHub repos](#github-repos)
 - [Important questions and steps](#important-questions-and-steps)
-- [Chapter 16 from John Canning Book](#chapter-16-from-john-canning-book)
+- [Chapter 16 - John Canning Book](#chapter-16---john-canning-book)
   - [Key points from that chapter](#key-points-from-that-chapter)
     - [Analyzing the Problem](#analyzing-the-problem)
     - [What Kind of Data?](#what-kind-of-data)
@@ -77,7 +77,7 @@ Algorytmy w Pythonie. Techniki programowania dla praktyków
 6. Who Will Maintain the Software?: Skills other developers
 7. Speed and Algorithms: Is speed important?
 
-# Chapter 16 from John Canning Book
+# Chapter 16 - John Canning Book
 
 This chapter comes with some caveats. Of necessity, it’s very general. Every real-world situation is unique, so what we say here may not be the right answer to your problem. You need to analyze the problem to determine its characteristics and see whether they match those of the data structure or algorithm.
 
