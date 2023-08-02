@@ -1,43 +1,44 @@
 <!-- TOC -->
 
 - [How Python actually running](#how-python-actually-running)
-    - [By Fred Baptiste](#by-fred-baptiste)
+  - [By Fred Baptiste](#by-fred-baptiste)
 - [Python Objects: everything is an object](#python-objects-everything-is-an-object)
-    - [By Fred Baptiste](#by-fred-baptiste)
+  - [By Fred Baptiste](#by-fred-baptiste-1)
 - [Garbage Collection - Fred Baptiste course](#garbage-collection---fred-baptiste-course)
 - [Context Manager](#context-manager)
 - [Functions in Python](#functions-in-python)
-    - [Function Parameters - Fred Baptiste course](#function-parameters---fred-baptiste-course)
+  - [Function Parameters - Fred Baptiste course](#function-parameters---fred-baptiste-course)
 - [Type Hint](#type-hint)
-    - [Robust Python - Annotating Your Code with Types](#robust-python---annotating-your-code-with-types)
-    - [Infoshare course - PL](#infoshare-course---pl)
-    - [Python in a Nutshell - Type Annotations](#python-in-a-nutshell---type-annotations)
+  - [Robust Python - Annotating Your Code with Types](#robust-python---annotating-your-code-with-types)
+  - [Infoshare course - PL](#infoshare-course---pl)
+  - [Python in a Nutshell - Type Annotations](#python-in-a-nutshell---type-annotations)
 - [Errors handling](#errors-handling)
-    - [Infoshare course - PL](#infoshare-course---pl)
-    - [Effective Python: 90 Specific Ways to Write Better Python](#effective-python-90-specific-ways-to-write-better-python)
-    - [Python in a Nutshell - Exceptions](#python-in-a-nutshell---exceptions)
+  - [Infoshare course - PL](#infoshare-course---pl-1)
+  - [Effective Python: 90 Specific Ways to Write Better Python](#effective-python-90-specific-ways-to-write-better-python)
+  - [Python in a Nutshell - Exceptions](#python-in-a-nutshell---exceptions)
 - [Python The File System](#python-the-file-system)
-    - [Standard library](#standard-library)
-    - [READING AND WRITING FILES](#reading-and-writing-files)
-    - [ORGANIZING FILES](#organizing-files)
-    - [WORKING WITH CSV FILES AND JSON DATA](#working-with-csv-files-and-json-data)
-    - [Input and Output](#input-and-output)
-    - [Files and Directories](#files-and-directories)
-    - [Python in a Nutshell - File and Text Operations](#python-in-a-nutshell---file-and-text-operations)
+  - [Standard library](#standard-library)
+  - [READING AND WRITING FILES](#reading-and-writing-files)
+  - [ORGANIZING FILES](#organizing-files)
+  - [WORKING WITH CSV FILES AND JSON DATA](#working-with-csv-files-and-json-data)
+  - [Input and Output](#input-and-output)
+  - [Files and Directories](#files-and-directories)
+  - [Python in a Nutshell - File and Text Operations](#python-in-a-nutshell---file-and-text-operations)
 - [Algorithms](#algorithms)
-    - [Base Change Algorithm - int](#base-change-algorithm---int)
+  - [Base Change Algorithm - int](#base-change-algorithm---int)
 - [Python extra features](#python-extra-features)
-    - [Ellipsis in Python](#ellipsis-in-python)
+  - [Ellipsis in Python](#ellipsis-in-python)
 - [Python features to keep in mind when coding](#python-features-to-keep-in-mind-when-coding)
-    - [Floats: Equality Testing - Fred Baptiste course](#floats-equality-testing---fred-baptiste-course)
-        - [PEP 485 regarding to folats equality](#pep-485-regarding-to-folats-equality)
-        - [PEP 327 regarding to decimal](#pep-327-regarding-to-decimal)
-    - [Booleans: Precedence and Short-Circuiting - Fred Baptiste course](#booleans-precedence-and-short-circuiting---fred-baptiste-course)
-- [Python data structure](#python-data-structure)
-    - [Named tuple](#named-tuple)
-    - [Enum](#enum)
+  - [Floats: Equality Testing - Fred Baptiste course](#floats-equality-testing---fred-baptiste-course)
+    - [PEP 485 regarding to folats equality](#pep-485-regarding-to-folats-equality)
+    - [PEP 327 regarding to decimal](#pep-327-regarding-to-decimal)
+  - [Booleans: Precedence and Short-Circuiting - Fred Baptiste course](#booleans-precedence-and-short-circuiting---fred-baptiste-course)
+- [Python builtin data structure](#python-builtin-data-structure)
+  - [Named tuple](#named-tuple)
+  - [Enum](#enum)
 - [Unpacking](#unpacking)
-    - [Extended Unpacking](#extended-unpacking)
+  - [Extended Unpacking](#extended-unpacking)
+- [Agrs and Kwargs](#agrs-and-kwargs)
 
 <!-- /TOC -->
 
@@ -175,7 +176,7 @@
 
 ---
 
-# Python data structure
+# Python builtin data structure
 
 ## Named tuple
 
@@ -194,3 +195,9 @@
 > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7785298#overview
 
 > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7785302#overview
+
+# Agrs and Kwargs
+
+
+The best article describing the difference between `*args` and `**kwargs` I've ever read: 
+- https://medium.com/@SaiParvathaneni/short-reads-args-and-kwargs-in-python-a-pizza-analogy-33f1dca11f05
