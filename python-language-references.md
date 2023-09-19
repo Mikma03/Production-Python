@@ -8,6 +8,7 @@
 - [Context Manager](#context-manager)
 - [Functions in Python](#functions-in-python)
   - [Function Parameters - Fred Baptiste course](#function-parameters---fred-baptiste-course)
+  - [Higher order functions \& closures](#higher-order-functions--closures)
 - [Type Hint](#type-hint)
   - [Robust Python - Annotating Your Code with Types](#robust-python---annotating-your-code-with-types)
   - [Infoshare course - PL](#infoshare-course---pl)
@@ -39,7 +40,9 @@
 - [Unpacking](#unpacking)
   - [Extended Unpacking](#extended-unpacking)
 - [Agrs and Kwargs](#agrs-and-kwargs)
+- [What is self](#what-is-self)
 
+<!-- /TOC -->
 <!-- /TOC -->
 
 # How Python actually running
@@ -48,13 +51,11 @@
 
 > https://www.udemy.com/course/python3-fundamentals/learn/lecture/35144960#overview
 
-
 # Python Objects: everything is an object
 
 ## By Fred Baptiste
 
 > https://www.udemy.com/course/python3-fundamentals/learn/lecture/35149676#overview
-
 
 # Garbage Collection - Fred Baptiste course
 
@@ -73,6 +74,12 @@
 ## Function Parameters - Fred Baptiste course
 
 > https://www.udemy.com/course/python-3-deep-dive-part-1/learn/lecture/7736812#overview
+
+## Higher order functions & closures
+
+This is section from Fred Baptiste course.
+
+> https://www.udemy.com/course/python3-fundamentals/learn/lecture/35151088#announcements
 
 ---
 
@@ -198,6 +205,15 @@
 
 # Agrs and Kwargs
 
+The best article describing the difference between `*args` and `**kwargs` I've ever read:
 
-The best article describing the difference between `*args` and `**kwargs` I've ever read: 
 - https://medium.com/@SaiParvathaneni/short-reads-args-and-kwargs-in-python-a-pizza-analogy-33f1dca11f05
+
+# What is self
+
+Based on Dr. Fred Baptiste course, the best explanation of `self` I've ever heard:
+
+- Initializing Classes - Lecture
+  - https://www.udemy.com/course/python3-fundamentals/learn/lecture/35151908#announcements
+
+![self-explanation](self-explanation.png)

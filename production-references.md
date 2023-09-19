@@ -15,6 +15,7 @@
 - [Observing Application Behavior and Performance](#observing-application-behavior-and-performance)
   - [Logging in Python](#logging-in-python)
 - [Makefile - Python](#makefile---python)
+- [Secrets using Python](#secrets-using-python)
 
 <!-- /TOC -->
 
@@ -174,3 +175,12 @@ With this hands-on guide, Python developers will learn how to forge the moving p
 
 - YouTube explanation
   - https://www.youtube.com/watch?v=Yt-UF7fNLJE&ab_channel=NeuralNine
+
+
+# Secrets using Python
+
+- How to Handle Secrets in Python
+  - https://blog.gitguardian.com/how-to-handle-secrets-in-python/#:~:text=Using%20an%20.&text=env%20file%20is%20a%20file,store%20secret%20keys%20and%20passwords.
+
+- Top 9 Secret Management Tools
+  - https://spectralops.io/blog/top-9-secret-management-tools-for-2022/
