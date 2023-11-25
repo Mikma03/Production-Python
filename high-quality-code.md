@@ -1,8 +1,4 @@
-<!-- TOC -->
-
-- [Articles](#articles)
-
-<!-- /TOC -->on Python Code
+# Documenting Python Code
 
 - Documenting Python Code: A Complete Guide
 
@@ -23,7 +19,7 @@
 - Documenting Python Projects With Sphinx and Read the Docs
   - https://realpython.com/courses/python-sphinx/
 
-# Articles
+# Articles - general
 
 - How I Write Industry-Standard Python Code
 

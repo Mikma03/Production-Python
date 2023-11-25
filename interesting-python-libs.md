@@ -50,3 +50,8 @@
 13. **Python-dotenv**:
     - **Description**: Python-dotenv reads key-value pairs from a `.env` file and sets them as environment variables in Python applications, aiding in the separation of configuration from code.
     - [Official Documentation on PyPI](https://pypi.org/project/python-dotenv/)
+
+
+14. **structlog**: 
+    - **Description**: Structured Logging for Python
+    - https://github.com/hynek/structlog

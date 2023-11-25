@@ -7,6 +7,7 @@
 - [Online courses](#online-courses)
 - [GitHub repos](#github-repos)
 - [Important questions and steps](#important-questions-and-steps)
+- [Chapter 01 - John Canning Book](#chapter-01---john-canning-book)
 - [Chapter 16 - John Canning Book](#chapter-16---john-canning-book)
   - [Key points from that chapter](#key-points-from-that-chapter)
     - [Analyzing the Problem](#analyzing-the-problem)
@@ -76,6 +77,26 @@ Algorytmy w Pythonie. Techniki programowania dla praktyków
 5. What Operations and How Frequent? Read / Write etc.
 6. Who Will Maintain the Software?: Skills other developers
 7. Speed and Algorithms: Is speed important?
+
+# Chapter 01 - John Canning Book
+
+You can generalize the data structures somewhat by looking at the common operations that you are likely to do across all of them. For example, to manage the requests for tickets, you need to
+
+- Add a new phone number (for someone who wants one or more tickets)
+
+- Remove a phone number (for someone who later decides they don’t want tickets)
+
+- Find a particular phone number (the next one to get a ticket by some method, or to look up one by its characteristics)
+
+- List all the phone numbers (show all the phone numbers exactly once, that is, without repeats except, perhaps, for cases where multiple identical entries were made)
+
+These four operations are needed for almost every data structure that manages a large collection of similar items. 
+
+We call them: 
+- insertion, 
+- deletion, 
+- search,
+- traversal.
 
 # Chapter 16 - John Canning Book
 

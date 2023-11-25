@@ -16,6 +16,7 @@
   - [Logging in Python](#logging-in-python)
 - [Makefile - Python](#makefile---python)
 - [Secrets using Python](#secrets-using-python)
+- [Structuring Your Project](#structuring-your-project)
 
 <!-- /TOC -->
 
@@ -44,8 +45,12 @@ This collection is continuously updated as the Python landscape evolves, making 
   - https://docs.python-guide.org/dev/virtualenvs/
 
 - Fred Baptiste course
+
   - https://www.udemy.com/course/python3-fundamentals/learn/lecture/35144942#overview
   - https://www.udemy.com/course/python3-fundamentals/learn/lecture/35144950#overview
+
+- Managing Projects with Poetry
+  - https://learning.oreilly.com/library/view/hypermodern-python-tooling/9781098139575/ch05.html#id109
 
 # Testing Python Code
 
@@ -101,12 +106,15 @@ This collection is continuously updated as the Python landscape evolves, making 
   - https://learning.oreilly.com/library/view/effective-python-90/9780134854717/ch09.xhtml
 
 - Debugging Python with VS Code
+
   - https://www.youtube.com/watch?v=R3smFr6W8jI&ab_channel=MattSpataro
 
 - 100 Days of Code: The Complete Python: Day 13th
+
   - https://www.udemy.com/course/100-days-of-code/
 
 - How to Use a Debugger
+
   - https://www.youtube.com/watch?v=7qZBwhSlfOo&ab_channel=TechWithTim
 
 - Command-Line Python Debugging with pdb
@@ -136,6 +144,9 @@ This collection is continuously updated as the Python landscape evolves, making 
 
 - Publishing Python Packages
   - https://learning.oreilly.com/library/view/publishing-python-packages/9781617299919/
+
+- Official Python docs: Overview of Python Packaging
+  - https://packaging.python.org/en/latest/overview/
 
 ## How to Dynamically Generate Requirements.txt file for Python Apps
 
@@ -167,20 +178,28 @@ With this hands-on guide, Python developers will learn how to forge the moving p
 - Official Python docs
   - https://docs.python.org/3.11/howto/logging-cookbook.html
 
+- Logging in Python
+  - https://realpython.com/courses/logging-python/
+
+- structlog: Structured Logging for Python
+  - https://github.com/hynek/structlog
+
 # Makefile - Python
 
-- Creating a Python Makefile
-
-  - https://earthly.dev/blog/python-makefile/#top
-
-- YouTube explanation
-  - https://www.youtube.com/watch?v=Yt-UF7fNLJE&ab_channel=NeuralNine
-
+- Explanantion and examples:
+  - makefile-explained.md
 
 # Secrets using Python
 
 - How to Handle Secrets in Python
+
   - https://blog.gitguardian.com/how-to-handle-secrets-in-python/#:~:text=Using%20an%20.&text=env%20file%20is%20a%20file,store%20secret%20keys%20and%20passwords.
 
 - Top 9 Secret Management Tools
   - https://spectralops.io/blog/top-9-secret-management-tools-for-2022/
+
+# Structuring Your Project
+
+- https://docs.python-guide.org/writing/structure/
+
+- https://learning.oreilly.com/library/view/architecture-patterns-with/9781492052197/app02.html#:-:text=Appendix%20B.%20A%20Template%20Project%20Structure

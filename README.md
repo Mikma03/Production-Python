@@ -7,7 +7,6 @@
   - [Index of Python Enhancement Proposals (PEPs)](#index-of-python-enhancement-proposals-peps)
   - [Python 3 Module of the Week](#python-3-module-of-the-week)
   - [Live Python code](#live-python-code)
-  - [Structuring Your Project](#structuring-your-project)
 - [Websites dedicated for Python](#websites-dedicated-for-python)
   - [Real Python](#real-python)
 - [The best books regarding to Python](#the-best-books-regarding-to-python)
@@ -27,8 +26,13 @@
     - [Python Concurrency with asyncio](#python-concurrency-with-asyncio)
     - [Mastering Python - Second Edition](#mastering-python---second-edition)
     - [Using Asyncio in Python](#using-asyncio-in-python)
+    - [CPython Internals](#cpython-internals)
+    - [Architecture Patterns with Python](#architecture-patterns-with-python)
+    - [Data Structures \& Algorithms in Python](#data-structures--algorithms-in-python)
   - [Python for DevOps](#python-for-devops)
     - [DevOps in Python: Infrastructure as Python](#devops-in-python-infrastructure-as-python)
+  - [Python Microservices](#python-microservices)
+    - [Building Python Microservices](#building-python-microservices)
 - [Python API's](#python-apis)
   - [REST API i Python. Kurs video.](#rest-api-i-python-kurs-video)
   - [APIs for Beginners](#apis-for-beginners)
@@ -82,10 +86,6 @@ PyMOTW-3 is a series of articles written by Doug Hellmann to demonstrate how to 
 ## Live Python code
 
 > https://pythontutor.com/
-
-## Structuring Your Project
-
-> https://docs.python-guide.org/writing/structure/
 
 ---
 
@@ -157,11 +157,27 @@ PyMOTW-3 is a series of articles written by Doug Hellmann to demonstrate how to 
 
 > https://learning.oreilly.com/library/view/using-asyncio-in/9781492075325/
 
+### CPython Internals
+> https://www.amazon.com/CPython-Internals-Guide-Python-Interpreter/dp/1775093344/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1696917940&sr=1-1
+
+### Architecture Patterns with Python
+> https://learning.oreilly.com/library/view/architecture-patterns-with/9781492052197/
+
+### Data Structures & Algorithms in Python
+> https://www.amazon.com/Structures-Algorithms-Python-Robert-Lafore/dp/013485568X/ref=sr_1_1?crid=1I3YPZF61T8I&keywords=Data+Structures+%26+Algorithms+in+Python&qid=1696917792&sprefix=data+structures+%26+algorithms+in+python%2Caps%2C182&sr=8-1
+
 ## Python for DevOps
 
 ### DevOps in Python: Infrastructure as Python
 
 > https://learning.oreilly.com/library/view/python-for-devops/9781492057680/
+
+## Python Microservices
+
+### Building Python Microservices
+> https://learning.oreilly.com/library/view/building-python-microservices/9781803245966/
+
+
 
 ---
 

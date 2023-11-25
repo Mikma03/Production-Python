@@ -9,6 +9,7 @@
 - [Functions in Python](#functions-in-python)
   - [Function Parameters - Fred Baptiste course](#function-parameters---fred-baptiste-course)
   - [Higher order functions \& closures](#higher-order-functions--closures)
+  - [Passing and Returning Functions](#passing-and-returning-functions)
 - [Type Hint](#type-hint)
   - [Robust Python - Annotating Your Code with Types](#robust-python---annotating-your-code-with-types)
   - [Infoshare course - PL](#infoshare-course---pl)
@@ -41,8 +42,8 @@
   - [Extended Unpacking](#extended-unpacking)
 - [Agrs and Kwargs](#agrs-and-kwargs)
 - [What is self](#what-is-self)
+- [Python HOWTOs](#python-howtos)
 
-<!-- /TOC -->
 <!-- /TOC -->
 
 # How Python actually running
@@ -80,6 +81,10 @@
 This is section from Fred Baptiste course.
 
 > https://www.udemy.com/course/python3-fundamentals/learn/lecture/35151088#announcements
+
+## Passing and Returning Functions
+
+> https://www.udemy.com/course/python3-fundamentals/learn/lecture/35151092#overview
 
 ---
 
@@ -216,4 +221,6 @@ Based on Dr. Fred Baptiste course, the best explanation of `self` I've ever hear
 - Initializing Classes - Lecture
   - https://www.udemy.com/course/python3-fundamentals/learn/lecture/35151908#announcements
 
-![self-explanation](self-explanation.png)
+# Python HOWTOs
+
+- https://docs.python.org/3/howto/index.html
