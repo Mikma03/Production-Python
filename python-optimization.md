@@ -56,6 +56,8 @@
 
 > https://pythonspeed.com/
 
+> https://pythonspeed.com/datascience/
+
 # Algorithm
 
 How to approach Python optimization task.

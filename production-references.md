@@ -17,6 +17,7 @@
 - [Makefile - Python](#makefile---python)
 - [Secrets using Python](#secrets-using-python)
 - [Structuring Your Project](#structuring-your-project)
+- [Python data-model](#python-data-model)
 
 <!-- /TOC -->
 
@@ -203,3 +204,9 @@ With this hands-on guide, Python developers will learn how to forge the moving p
 - https://docs.python-guide.org/writing/structure/
 
 - https://learning.oreilly.com/library/view/architecture-patterns-with/9781492052197/app02.html#:-:text=Appendix%20B.%20A%20Template%20Project%20Structure
+
+# Python data-model
+
+Pydantic library
+- https://www.youtube.com/watch?v=gb3arRysqMo&list=WL&index=2&t=1435s
+
