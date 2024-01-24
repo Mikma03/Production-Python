@@ -144,6 +144,7 @@ This collection is continuously updated as the Python landscape evolves, making 
   - https://www.infoshareacademy.online/products/python-poczatek/categories/4273154/posts/14345879
 
 - Publishing Python Packages
+
   - https://learning.oreilly.com/library/view/publishing-python-packages/9781617299919/
 
 - Official Python docs: Overview of Python Packaging
@@ -177,9 +178,11 @@ With this hands-on guide, Python developers will learn how to forge the moving p
   - https://www.youtube.com/watch?v=pxuXaaT1u3k&ab_channel=ArjanCodes
 
 - Official Python docs
+
   - https://docs.python.org/3.11/howto/logging-cookbook.html
 
 - Logging in Python
+
   - https://realpython.com/courses/logging-python/
 
 - structlog: Structured Logging for Python
@@ -208,5 +211,5 @@ With this hands-on guide, Python developers will learn how to forge the moving p
 # Python data-model
 
 Pydantic library
-- https://www.youtube.com/watch?v=gb3arRysqMo&list=WL&index=2&t=1435s
 
+- https://www.youtube.com/watch?v=ok8bF8M7gjk&t=1s

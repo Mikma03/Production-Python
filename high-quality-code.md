@@ -1,3 +1,7 @@
+# Google standards
+
+- https://google.github.io/styleguide/
+
 # Documenting Python Code
 
 - Documenting Python Code: A Complete Guide
